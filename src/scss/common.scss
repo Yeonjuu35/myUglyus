@@ -32,7 +32,7 @@ $Uglyline : #E8E8E8;
 // 전체 공용 스타일
 html body {
     font-family: 'Pretendard';
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.02rem;
     color: $Uglydarkgray;
 }
 
@@ -87,29 +87,6 @@ html body {
     @media (max-width : 990px) {
         font-size: 20px;
         line-height: 1.6rem;
-    }
-}
-.fontTitle {
-    font-size: 38px;
-    font-weight: 700;
-    @media (max-width : 990px) {
-        font-size: 18px;
-    }
-}
-.fontSubtitle {
-    font-size: 22px;
-    font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
-}
-.fontLeadcopy {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.75rem;
-    @media (max-width : 990px) {
-        font-size: 10px;
-        line-height: 1rem;
     }
 }
 .fontText {
@@ -182,10 +159,6 @@ html body {
     @media (max-width : 990px) {
         font-size: 8px;
     }
-}
-.fontRecipeList {
-    font-size: 10px;
-    font-weight: 600;
 }
 .fontRecipeName {
     font-size: 22px;
@@ -264,16 +237,5 @@ html body {
     font-weight: 500;
     @media (max-width : 990px) {
         font-size: 8px;
-    }
-}
-.fontBtnDefalut {
-    font-size: 15px;
-    font-weight: 600;
-}
-.fontBtnLarge {
-    font-size: 22px;
-    font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 15px;
     }
 }

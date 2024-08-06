@@ -1,0 +1,54 @@
+/* 영어 폰트 */
+@font-face {
+    font-family: 'HSYuji-Regular';
+    src: url('../font/HSYuji-Regular/HSYuji-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 한글 폰트 */
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    src: url('./Pretendard/Pretendard-Thin.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    src: url('./Pretendard/Pretendard-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src: url('./Pretendard/Pretendard-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url('./Pretendard/Pretendard-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url('./Pretendard/Pretendard-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src: url('./Pretendard/Pretendard-SemiBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src: url('./Pretendard/Pretendard-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    src: url('./Pretendard/Pretendard-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    src: url('./Pretendard/Pretendard-Black.woff2') format('woff2');
+}

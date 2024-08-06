@@ -1,0 +1,279 @@
+// 컬러
+$Uglybg : #FFF4E0;
+$Uglyred : #FF2F2F;
+$Uglyorange : #FE663F;
+$Uglygreen : #5EAB42;
+$Uglybrawn : #CD8F50;
+$Uglypupple : #B552E4;
+$Uglydarkgray : #333333;
+$Uglygray : #9D9D9D;
+$Uglylightgray : #CECECE;
+$Uglyline : #E8E8E8;
+
+// 컴포넌트 간격 여백
+.componentBlank {
+    margin-bottom: 200px;
+    @media (max-width : 990px) {
+        margin-bottom: 80px;
+    }
+}
+
+// 컨테이너 사이즈
+.container.coustomWidthL {
+    max-width: 1824px !important;
+    margin: 0 auto !important;
+}
+.container.coustomWidthS {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+// 폰트
+// 전체 공용 스타일
+html body {
+    font-family: 'Pretendard';
+    letter-spacing: -0.05rem;
+    color: $Uglydarkgray;
+}
+
+// 폰트 두께
+.fontThin {
+    font-weight: 100 !important;
+}
+.fontLight {
+    font-weight: 300 !important;
+}
+.fontRegular {
+    font-weight: 400 !important;
+}
+.fontMedium {
+    font-weight: 500 !important;
+}
+.fontSemibold {
+    font-weight: 600 !important;
+}
+.fontBold {
+    font-weight: 700 !important;
+}
+
+// 커스텀
+.fontNavi {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontNaviSub {
+    font-size: 16px;
+    font-weight: 400;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontUtil {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    @media (max-width : 990px) {
+        font-size: 10px;
+    }
+}
+.fontMainSwiper {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 3rem;
+    @media (max-width : 990px) {
+        font-size: 20px;
+        line-height: 1.6rem;
+    }
+}
+.fontTitle {
+    font-size: 38px;
+    font-weight: 700;
+    @media (max-width : 990px) {
+        font-size: 18px;
+    }
+}
+.fontSubtitle {
+    font-size: 22px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontLeadcopy {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.75rem;
+    @media (max-width : 990px) {
+        font-size: 10px;
+        line-height: 1rem;
+    }
+}
+.fontText {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+.fontVegeSwiper {
+    font-family: 'HSYuji-Regular';
+    font-size: 150px;
+    letter-spacing: -0.5rem;
+    color: $Uglyorange;
+    @media (max-width : 990px) {
+        font-size: 50px;
+    }
+}
+.fontReviewSubs {
+    font-size: 14px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontReviewName {
+    font-size: 14px;
+    font-weight: 500;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontReviewText {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: -0.4rem;
+    line-height: 1.3rem;
+}
+.fontTypeTag {
+    font-size: 15px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 8px;
+    }
+}
+.fontMarketName {
+    font-size: 15px;
+    font-weight: 400;
+    @media (max-width : 990px) {
+        font-size: 8px;
+    }
+}
+.fontMarketPrice {
+    font-size: 16px;
+    font-weight: 700;
+    @media (max-width : 990px) {
+        font-size: 10px;
+    }
+}
+.fontMarketPriceLine {
+    font-size: 16px;
+    font-weight: 400;
+    color: $Uglylightgray;
+    text-decoration: line-through;
+    @media (max-width : 990px) {
+        font-size: 10px;
+    }
+}
+.fontMarketReview {
+    font-size: 14px;
+    font-weight: 300;
+    @media (max-width : 990px) {
+        font-size: 8px;
+    }
+}
+.fontRecipeList {
+    font-size: 10px;
+    font-weight: 600;
+}
+.fontRecipeName {
+    font-size: 22px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 10px;
+    }
+}
+.fontRecipeText {
+    font-size: 18px;
+    font-weight: 300;
+    @media (max-width : 990px) {
+        font-size: 8px;
+    }
+}
+.fontMapTitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.8rem;
+    @media (max-width : 990px) {
+        font-size: 16px;
+        line-height: 1.3rem;
+    }
+}
+.fontMapSubtitle {
+    font-size: 18px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontFormboxTitle {
+    font-size: 22px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 17px;
+    }
+}
+.fontInputTitle {
+    font-size: 16px;
+    font-weight: 500;
+    @media (max-width : 990px) {
+        font-size: 13px;
+    }
+}
+.fontPlacehold {
+    font-size: 14px;
+    font-weight: 300;
+    @media (max-width : 990px) {
+        font-size: 12px;
+    }
+}
+.fontFooterTitle {
+    font-size: 18px;
+    font-weight: 700;
+    @media (max-width : 990px) {
+        font-size: 14px;
+    }
+}
+.fontFooterBd {
+    font-size: 14px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 10px;
+    }
+}
+.fontFooterText {
+    font-size: 14px;
+    font-weight: 300;
+    @media (max-width : 990px) {
+        font-size: 10px;
+    }
+}
+.fontQuick {
+    font-size: 13px;
+    font-weight: 500;
+    @media (max-width : 990px) {
+        font-size: 8px;
+    }
+}
+.fontBtnDefalut {
+    font-size: 15px;
+    font-weight: 600;
+}
+.fontBtnLarge {
+    font-size: 22px;
+    font-weight: 600;
+    @media (max-width : 990px) {
+        font-size: 15px;
+    }
+}

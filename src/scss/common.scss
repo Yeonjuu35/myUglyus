@@ -10,6 +10,14 @@ $Uglygray : #9D9D9D;
 $Uglylightgray : #CECECE;
 $Uglyline : #E8E8E8;
 
+ul, li, dl, dt, dd, a, p, h1, h2{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: $Uglydarkgray;
+}
+
 // 컴포넌트 간격 여백
 .componentBlank {
     margin-bottom: 200px;
@@ -18,9 +26,20 @@ $Uglyline : #E8E8E8;
     }
 }
 
+// 컴포넌트별 백그라운드
+.svgbgtype1:before{
+    content: "";
+    display: block;
+    height: 10.64vw;
+    width:100vw;
+    background:url()
+
+}
+
 // 컨테이너 사이즈
 .container.coustomWidthL {
     max-width: 1824px !important;
+    height: auto;
     margin: 0 auto !important;
 }
 .container.coustomWidthS {
@@ -61,33 +80,25 @@ html body {
     font-size: 18px;
     font-weight: 500;
     color: #000000;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
 }
 .fontNaviSub {
     font-size: 16px;
     font-weight: 400;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
 }
 .fontUtil {
     font-size: 13px;
     font-weight: 400;
     color: #000000;
-    @media (max-width : 990px) {
-        font-size: 10px;
-    }
+}
+.fontEventTimer {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
 }
 .fontMainSwiper {
     font-size: 38px;
     font-weight: 700;
     line-height: 3rem;
-    @media (max-width : 990px) {
-        font-size: 20px;
-        line-height: 1.6rem;
-    }
 }
 .fontText {
     font-size: 16px;
@@ -99,23 +110,14 @@ html body {
     font-size: 150px;
     letter-spacing: -0.5rem;
     color: $Uglyorange;
-    @media (max-width : 990px) {
-        font-size: 50px;
-    }
 }
 .fontReviewSubs {
     font-size: 14px;
     font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
 }
 .fontReviewName {
     font-size: 14px;
     font-weight: 500;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
 }
 .fontReviewText {
     font-size: 13px;
@@ -126,116 +128,150 @@ html body {
 .fontTypeTag {
     font-size: 15px;
     font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 8px;
-    }
 }
 .fontMarketName {
     font-size: 15px;
     font-weight: 400;
-    @media (max-width : 990px) {
-        font-size: 8px;
-    }
 }
 .fontMarketPrice {
     font-size: 16px;
     font-weight: 700;
-    @media (max-width : 990px) {
-        font-size: 10px;
-    }
 }
 .fontMarketPriceLine {
     font-size: 16px;
     font-weight: 400;
     color: $Uglylightgray;
     text-decoration: line-through;
-    @media (max-width : 990px) {
-        font-size: 10px;
-    }
 }
 .fontMarketReview {
     font-size: 14px;
     font-weight: 300;
-    @media (max-width : 990px) {
-        font-size: 8px;
-    }
 }
 .fontRecipeName {
     font-size: 22px;
     font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 10px;
-    }
 }
 .fontRecipeText {
     font-size: 18px;
     font-weight: 300;
-    @media (max-width : 990px) {
-        font-size: 8px;
-    }
 }
 .fontMapTitle {
     font-size: 22px;
     font-weight: 600;
     line-height: 1.8rem;
-    @media (max-width : 990px) {
-        font-size: 16px;
-        line-height: 1.3rem;
-    }
 }
 .fontMapSubtitle {
     font-size: 18px;
     font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
 }
 .fontFormboxTitle {
     font-size: 22px;
     font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 17px;
-    }
 }
 .fontInputTitle {
     font-size: 16px;
     font-weight: 500;
-    @media (max-width : 990px) {
-        font-size: 13px;
-    }
 }
 .fontPlacehold {
     font-size: 14px;
     font-weight: 300;
-    @media (max-width : 990px) {
-        font-size: 12px;
-    }
 }
 .fontFooterTitle {
     font-size: 18px;
     font-weight: 700;
-    @media (max-width : 990px) {
-        font-size: 14px;
-    }
 }
 .fontFooterBd {
     font-size: 14px;
     font-weight: 600;
-    @media (max-width : 990px) {
-        font-size: 10px;
-    }
 }
 .fontFooterText {
     font-size: 14px;
     font-weight: 300;
-    @media (max-width : 990px) {
-        font-size: 10px;
-    }
 }
 .fontQuick {
     font-size: 13px;
     font-weight: 500;
-    @media (max-width : 990px) {
-        font-size: 8px;
+}
+
+@media (max-width : 990px) {
+    .fontNavi {
+        font-size: 0.88rem;
+    }
+    .fontNaviSub {
+        font-size: 0.738rem;
+    }
+    .fontUtil {
+        font-size: 0.625rem;
+    }
+    .fontEventTimer {
+        font-size: 0.75rem;
+    }
+    .fontMainSwiper {
+        font-size: 1.25rem;
+        line-height: 1.6rem;
+    }
+    .fontText {
+        font-size: 1rem;
+    }
+    .fontVegeSwiper {
+        font-size: 3.125rem;
+    }
+    .fontReviewSubs {
+        font-size: 0.75rem;
+    }
+    .fontReviewName {
+        font-size: 0.75rem;
+    }
+    .fontReviewText {
+        font-size: 0.8125rem;
+    }
+    .fontTypeTag {
+        font-size: 0.5rem;
+    }
+    .fontMarketName {
+        font-size: 0.5rem;
+    }
+    .fontMarketPrice {
+        font-size: 0.625rem;
+    }
+    .fontMarketPriceLine {
+        font-size: 0.625rem;
+    }
+    .fontMarketReview {
+        font-size: 0.5rem;
+    }
+    .fontRecipeName {
+        font-size: 0.625rem;
+    }
+    .fontRecipeText {
+        font-size: 0.5rem;
+    }
+    .fontMapTitle {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .fontMapSubtitle {
+        font-size: 0.75rem;
+    }
+    .fontFormboxTitle {
+        font-size: 1.0625rem;
+    }
+    .fontInputTitle {
+        font-size: 0.8125rem;
+    }
+    .fontPlacehold {
+        font-size: 0.75rem;
+    }
+    .fontFooterTitle {
+        font-size: 0.875rem;
+    }
+    .fontFooterBd {
+        font-size: 0.625rem;
+    }
+    .fontFooterText {
+        font-size: 0.625rem;
+    }
+    .fontQuick {
+        font-size: 0.5rem;
     }
 }

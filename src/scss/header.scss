@@ -1,0 +1,408 @@
+// 컬러
+$Uglybg : #FFF4E0;
+$Uglyred : #FF2F2F;
+$Uglyorange : #FE663F;
+$Uglygreen : #5EAB42;
+$Uglybrawn : #CD8F50;
+$Uglypupple : #B552E4;
+$Uglydarkgray : #333333;
+$Uglygray : #9D9D9D;
+$Uglylightgray : #CECECE;
+$Uglyline : #E8E8E8;
+
+body {
+    background: bisque !important;
+        height: 5000px;
+}
+
+@media (min-width : 320px) {
+    body {
+        &.scrollmode{
+            header{
+                background-color: white !important;
+            }
+        }
+        &.hovermode{
+            header{
+                background-color: white !important;
+                .gnb{
+                    &:before{
+                    border-top: 1px solid $Uglyline;
+                    height: calc(6rem + 15px) !important;
+                    right: 0 !important;
+                    left: 0 !important;
+                    }
+                    .gnbli{
+                        .gnbul{
+                            height: calc(6rem + 5px) !important;
+                        }
+                    }
+                }
+            }
+        }
+        header{
+            background: #ffffff;
+            height: auto;
+            .naviStyle{
+                .navibox{
+                    width: 100%;
+                    .logoWidth {
+                        max-width: 60px;
+                    }
+                    .logoMargin {
+                        margin-bottom: 5px;
+                    }
+                    .eventTimer {
+                        width: 175px;
+                        height: 25px;
+                        background: $Uglyorange;
+                        border-radius: 5px;
+                        > img {
+                            max-width: 15px;
+                            height: auto;
+                        }
+                        > span {
+                            margin-top: 1px;
+                        }
+                    }    
+                }
+                .gnb{
+                    gap: 2vw;
+                    border-top: 1px solid $Uglyline;
+                    height: 35px;
+                    
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        right: 0;
+                        height: 0;
+                        background-color: white;
+                        transition: height 0.3s;
+                    }
+                    .gnbli{
+                        > a {
+                            margin-bottom: 6px;
+                            padding: 7px 10px 0 16px;
+                            overflow: hidden;
+                            position: relative;
+                            line-height: 1;
+                            &:after{
+                                content: "";
+                                display: block;
+                                width: 50px;
+                                height: 100%;
+                                position: absolute;
+                                left: 0;
+                                background-repeat: no-repeat;
+                                background-position: center bottom;
+                                transform: translateY(0);
+                                transition: 0.5s;
+                            }
+                        }
+                        &.active{
+                           > a:before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                height: 100%;
+                                left: 0;
+                                width: 16px;
+                                display: block;
+                                transition: 0.5s;
+                                background-image: url(../../public/img/header/ground5.svg);
+                                background-repeat: no-repeat;
+                                background-position: center bottom;
+                                z-index: 1;
+                                background-size: contain;
+                            }
+                            > a:after{
+                                transform: translateY(-100%);
+                            }
+                        }
+                        .naviIcon0{
+                            display: block;
+                            &:after{
+                                background-image: url(../../public/img/header/carrot.svg);
+                                background-size: auto 83%;
+                                left: -17px;
+                                margin-top: 47px;
+                            }
+                        }
+                        .naviIcon1{
+                            display: block;
+                            &:after{
+                                background-image: url(../../public/img/header/onion2.svg);
+                                background-size: auto 72%;
+                                left: -17px;
+                                margin-top: 40px;
+                            }
+                        }
+                        .naviIcon2{
+                            display: block;
+                            &:after{
+                                background-image: url(../../public/img/header/potato2.svg);
+                                background-size: auto 59%;
+                                left: -17px;
+                                margin-top: 41px;
+                            }
+                        }
+                        .naviIcon3{
+                            display: block;
+                            &:after{
+                                background-image: url(../../public/img/header/sweetpotato2.svg);
+                                background-size: auto 69%;
+                                left: -17px;
+                                margin-top: 41px;
+                            }
+                        }
+                        .gnbul{
+                            top: 31px;
+                            height: 0;
+                            overflow: hidden;
+                            transition: 0.3s;
+                            .ulSubmenu{
+                                width: 78px;
+                                height: 30px;
+                            }
+                        }
+                        .ulStyle1{
+                            left: -1px;
+                        }
+                        .ulStyle2{
+                            left: 0;
+                        }
+                    }
+                    .gnbli0{
+                        &.active{
+                            > a{
+                                > span{
+                                    color: $Uglyorange;
+                                }
+                            }
+                        }
+                    }
+                    .gnbli1{
+                        &.active{
+                            > a{
+                                > span{
+                                    color: $Uglybrawn;
+                                }
+                            }
+                        }
+                    }
+                    .gnbli2{
+                        &.active{
+                            > a{
+                                > span{
+                                    color: $Uglygreen;
+                                }
+                            }
+                        }
+                    }
+                    .gnbli3{
+                        &.active{
+                            > a{
+                                > span{
+                                    color: #973F81;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    
+}
+
+@media (min-width : 376px) and (max-width : 419px) {
+    .gnb {
+        gap: 7vw !important;
+    }
+}
+@media (min-width : 420px) and (max-width : 990px) {
+    .gnb {
+        gap: 10vw !important;
+    }
+}
+
+@media (min-width : 991px) {
+    body {
+        .customFluid {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 1rem);
+            padding-left: var(--bs-gutter-x, 1rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &.hovermode{
+            header{
+
+                .gnb{
+                    &:before{
+                    height: calc(9rem + 15px) !important;
+                    }
+                    .gnbli{
+                        .gnbul{
+                            height: calc(9rem + 5px) !important;
+                        }
+                    }
+                }
+            }
+        }
+        header{
+            background: none;
+            .naviStyle{
+                .navibox{
+                    width: auto;
+                    .logoWidth{
+                        max-width: 130px;
+                    }
+                    .logoMargin{
+                        margin-bottom: 7px;
+                    }
+                }
+                .gnb{
+                    border-top: none;
+                    height: auto;
+                    gap: none;
+                    &:before{
+
+                    }
+                    .gnbli{
+                        > a {
+                            margin-bottom: 17px;
+                            padding: 20px 50px 0;
+                            &:after{
+
+                            }
+                        }
+                        &:hover{
+                           > a:before{
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                height: 100%;
+                                left: 2px;
+                                width: 45px;
+                                display: block;
+                                transition: 0.5s;
+                                background-image: url(../../public/img/header/ground5.svg);
+                                background-repeat: no-repeat;
+                                background-position: center bottom;
+                                z-index: 1;
+                                margin-top: 1px;
+                                }
+                            > a:after{
+                                transform: translateY(-100%);
+                            }
+                        }
+                        .naviIcon0{
+
+                            &:after{
+                                background-size: auto 100%;
+                                margin-top: 10px;
+                                left: 0;
+                            }
+                        }
+                        .naviIcon1{
+
+                            &:after{
+                                background-size: auto 100%;
+                                margin-top: 5px;
+                                left: 0;
+                            }
+                        }
+                        .naviIcon2{
+
+                            &:after{
+                                background-size: auto 77%;
+                                margin-top: 5px;
+                                left: 0;
+                            }
+                        }
+                        .naviIcon3{
+
+                            &:after{
+                                background-size: auto 88%;
+                                margin-top: 5px;
+                                left: 0;
+                            }
+                        }
+                        .gnbul{
+                            top: 65px;
+                            .ulSubmenu{
+                                width: 161px;
+                                height: 45px;
+                            }
+                        }
+                        .ulStyle1{
+                            left: -1px;
+                        }
+                        .ulStyle2{
+                            left: 1.085px;
+                        }
+                    }
+                    .gnbli0{
+                        &:hover{
+                            > a{
+                                > span{
+                                    color: $Uglyorange;
+                                }
+                            }
+                            a:hover{
+                                > span{
+                                    color: $Uglyorange;
+                                }
+                            }
+                        }
+                    }
+                    .gnbli1{
+                        &:hover{
+                            > a{
+                                > span{
+                                    color: $Uglybrawn;
+                                }
+                            }
+                        }
+                        a:hover{
+                            > span{
+                                color: $Uglybrawn;
+                            }
+                        }
+                    }
+                    .gnbli2{
+                        &:hover{
+                            > a{
+                                > span{
+                                    color: $Uglygreen;
+                                }
+                            }
+                        }
+                        a:hover{
+                            > span{
+                                color: $Uglygreen;
+                            }
+                        }
+                    }
+                    .gnbli3{
+                        &:hover{
+                            > a{
+                                > span{
+                                    color: #973F81;
+                                }
+                            }
+                        }
+                        a:hover{
+                            > span{
+                                color: #973F81;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

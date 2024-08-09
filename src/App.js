@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       {/* <Header></Header> */}
-      <Footer></Footer>
+      <Footer wavecls={'bgType1ReverseR basetop'}></Footer>
     </>
   );
 }

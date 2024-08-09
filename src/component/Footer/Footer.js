@@ -2,9 +2,9 @@ import React from 'react'
 import { DefalutButton, SnsIcon } from '../Common/style';
 import '../../scss/footer.scss';
 
-function Footer() {
+function Footer({wavecls}) {
     return (
-        <footer className='customFluid bgType1ReverseR basetop py-lg-5'>
+        <footer className={`customFluid  py-lg-5  ${wavecls}`}>
             <div className='d-flex flex-column flex-lg-row justify-content-between container customWidthS'>
                 <div className='d-flex flex-column px-3 px-lg-0 pt-5'>
                     <h1 className='order-lg-3 order-0 mb-3 mb-lg-0'>
@@ -12,7 +12,7 @@ function Footer() {
                     </h1>
                     <h2 className='m-0 fontFooterTitle mb-3'>어글리어스 고객센터 070.4769.0271</h2>
                     <div className='d-flex mb-4'>
-                        <div className='d-flex flex-column me-5'>
+                        <div className='d-flex flex-column me-4'>
                             <p className='fontFooterBd'>화·목요일</p>
                             <p className='fontFooterBd my-1'>월·금요일</p>
                             <p className='fontFooterBd'>토·일·공휴일</p>

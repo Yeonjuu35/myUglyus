@@ -27,24 +27,225 @@ ul, li, dl, dt, dd, a, p, h1, h2{
 }
 
 // 컴포넌트별 백그라운드
-.svgbgtype1:before{
+// left, transform 분리하기
+.basetop:before{
+    top:0
+}
+.basebottom:before{
+    bottom:0
+}
+.bgType1L:before{
+    position: absolute;
     content: "";
     display: block;
-    height: 10.64vw;
     width:100vw;
-    background:url()
-
+    height: 10.64vw;
+    background:url(../../public/img/background/background1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scaleX(-1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType1R:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 10.64vw;
+    background:url(../../public/img/background/background1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType1ReverseL:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 10.64vw;
+    background:url(../../public/img/background/background1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scale(-1, -1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType1ReverseR:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 10.64vw;
+    background:url(../../public/img/background/background1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scaleY(-1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType2:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 13.67vw;
+    background:url(../../public/img/background/background2.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType2Reverse:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 13.67vw;
+    background:url(../../public/img/background/background2.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scaleY(-1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType3L:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 31.25vw;
+    background:url(../../public/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType3R:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 31.25vw;
+    background:url(../../public/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scaleX(-1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType3ReverseL:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 31.25vw;
+    background:url(../../public/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scaleY(-1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType3ReverseR:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100vw;
+    height: 31.25vw;
+    background:url(../../public/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    transform: scale(-1, -1);
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
 }
 
-// 컨테이너 사이즈
-.container.coustomWidthL {
+// 컨테이너 사이즈(~ 991px 이상)
+.container.customWidthL {
     max-width: 1824px !important;
-    height: auto;
     margin: 0 auto !important;
+    padding: 0;
+    @media (max-width : 990px) {
+        max-width: none !important;
+    }
 }
-.container.coustomWidthS {
+.container.customWidthS {
     max-width: 1400px !important;
     margin: 0 auto !important;
+    padding: 0;
+    @media (max-width : 990px) {
+        max-width: none !important;
+    }
+}
+.customFluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
+    margin-right: auto;
+    margin-left: auto;
+    @media (max-width: 990px) {
+        width: initial !important;
+        padding-right: initial !important;
+        padding-left: initial !important;
+        margin-right: initial !important;
+        margin-left: initial !important;
+    }
+}
+
+// 로고
+.logoWidth{
+    max-width: 130px;
+    @media (max-width : 990px) {
+        max-width: 100px;
+    }
+}
+.logoMargin{
+    margin-bottom: 7px;
+    @media (max-width : 990px) {
+        margin-bottom: 0;
+    }
 }
 
 // 폰트
@@ -193,6 +394,12 @@ html body {
     font-weight: 500;
 }
 
+@media (max-width : 1122px) {
+    .fontFooterText {
+        font-size: 0.625rem;
+    }
+}
+
 @media (max-width : 990px) {
     .fontNavi {
         font-size: 0.88rem;
@@ -266,9 +473,6 @@ html body {
         font-size: 0.875rem;
     }
     .fontFooterBd {
-        font-size: 0.625rem;
-    }
-    .fontFooterText {
         font-size: 0.625rem;
     }
     .fontQuick {

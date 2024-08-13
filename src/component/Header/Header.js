@@ -81,11 +81,11 @@ function Header() {
 
     return (
         <header className='fixed-top customFluid'>
-            <div className='container coustomWidthL naviStyle d-flex justify-content-between align-items-lg-center align-items-stretch p-0 flex-column flex-lg-row py-lg-2 py-0'>
+            <div className='container customWidthL naviStyle d-flex justify-content-between align-items-lg-center align-items-stretch p-0 flex-column flex-lg-row py-lg-2 py-0'>
                 <div className='navibox d-flex justify-content-between align-items-center px-lg-0 px-2'>
                     <h1>
                         <a href="/">
-                            <img className='logoWidth logoMargin' src='./img/header/logo.svg' alt="어글리어스 로고" />
+                            <img className='logoWidth logoMargin py-2 py-lg-0' src='./img/header/logo.svg' alt="어글리어스 로고" />
                         </a>
                     </h1>
                     <a href="#" className='eventTimer d-flex justify-content-center align-items-center d-lg-none'>

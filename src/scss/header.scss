@@ -10,11 +10,6 @@ $Uglygray : #9D9D9D;
 $Uglylightgray : #CECECE;
 $Uglyline : #E8E8E8;
 
-body {
-    background: bisque !important;
-        height: 5000px;
-}
-
 @media (min-width : 320px) {
     body {
         &.scrollmode{
@@ -46,12 +41,6 @@ body {
             .naviStyle{
                 .navibox{
                     width: 100%;
-                    .logoWidth {
-                        max-width: 60px;
-                    }
-                    .logoMargin {
-                        margin-bottom: 5px;
-                    }
                     .eventTimer {
                         width: 175px;
                         height: 25px;
@@ -70,7 +59,6 @@ body {
                     gap: 2vw;
                     border-top: 1px solid $Uglyline;
                     height: 35px;
-                    
                     &:before{
                         content: "";
                         position: absolute;
@@ -230,13 +218,7 @@ body {
 
 @media (min-width : 991px) {
     body {
-        .customFluid {
-            width: 100%;
-            padding-right: var(--bs-gutter-x, 1rem);
-            padding-left: var(--bs-gutter-x, 1rem);
-            margin-right: auto;
-            margin-left: auto;
-        }
+
         &.hovermode{
             header{
 
@@ -257,12 +239,6 @@ body {
             .naviStyle{
                 .navibox{
                     width: auto;
-                    .logoWidth{
-                        max-width: 130px;
-                    }
-                    .logoMargin{
-                        margin-bottom: 7px;
-                    }
                 }
                 .gnb{
                     border-top: none;

@@ -23,6 +23,7 @@ $Uglyline : #E8E8E8;
         bottom: calc(10vh - 55px);
         right: 35px;
         width: 70px;
+        z-index: 1;
     &.showmenu{
             .radishQuick{
                 ul{
@@ -92,13 +93,14 @@ $Uglyline : #E8E8E8;
         background-color: #ffffff;
         width: 100%;
         bottom: 0;
+        z-index: 1;
         .radishQuick{
             &:before{ 
                 display: none;
             }
             ul{
                 background-color: none;
-                height: 55px;
+                height: 50px;
                 justify-content: space-between;
                 margin: 5px 10px;
                 li{
@@ -109,7 +111,8 @@ $Uglyline : #E8E8E8;
                         display: block;
                     }
                     img{
-                        width: 30px;
+                        max-width: 30px;
+                        height: 30px;
                         display: block;
                         margin: 0 auto;
                     }

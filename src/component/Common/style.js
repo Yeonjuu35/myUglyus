@@ -14,18 +14,22 @@ export const DefalutButton = styled.button`
 `
 export const BigButton = styled.button`
     background: ${(props) => props.btncolor || '#FE663F'};
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
     color: ${(props) => props.fontcolor || '#FFFFFF'};
-    width : 400px;
-    height : 60px;
+    width: 25em;
+    height: 3em;
     border : none;
-    border-radius : 20px;
+    border-radius: 1.25em;
+    @media (max-width : 1200px) {
+        width: 20em;
+        height: 2.5em;
+    }
     @media (max-width : 990px) {
-        font-size: 15px;
-        width : 285px;
-        height : 40px;
-        border-radius : 10px;
+        font-size: 0.9375em;
+        width: 17.8125em;
+        height: 2.5em;
+        border-radius: 0.625em;
     }
 `
 
@@ -75,12 +79,12 @@ export const SubTitle = styled.p`
     }
 `
 export const Leadcopy = styled.p`
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 300;
-    line-height: 1.75rem;
+    line-height: 1.75em;
     @media (max-width : 990px) {
-        font-size: 10px;
-        line-height: 1rem;
+        font-size: 0.625em;
+        line-height: 1.5em;
     }
 `
 
@@ -99,6 +103,19 @@ export const TagType1 = styled.p`
     }
 `
 export const TagType2 = styled.p`
+    display : inline-block;
+    background: ${(props) => props.tag1Color || '#FE663F'};
+    font-size: 1.5em;
+    color : #FFFFFF;
+    font-weight: 600;
+    border-radius : 3.125em;
+    padding : 0.2em 0.7em;
+    @media (max-width : 990px) {
+        font-size: 0.875em;
+        border-radius : 0.9375em;
+    }
+`
+export const TagType3 = styled.p`
     display : inline-block;
     background: ${(props) => props.tag2Color || '#FE663F'};
     font-size: 15px;

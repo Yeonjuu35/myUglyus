@@ -1,0 +1,70 @@
+// 컬러
+$Uglybg : #FFF4E0;
+$Uglyred : #FF2F2F;
+$Uglyorange : #FE663F;
+$Uglygreen : #5EAB42;
+$Uglybrawn : #CD8F50;
+$Uglypupple : #B552E4;
+$Uglydarkgray : #333333;
+$Uglygray : #9D9D9D;
+$Uglylightgray : #CECECE;
+$Uglyline : #E8E8E8;
+
+// MainSwiper 
+.rwdLayout {
+    transform: translateY(80.41px);
+    height: 177vw;
+    @media (min-width : 500px) {
+        height: 156vw;
+    }
+    @media (min-width : 768px) {
+        height: 145vw;
+    }
+    @media (min-width : 991px) {
+        transform: translateY(0);
+        height: auto;
+    }
+}
+
+
+// SwiperContent
+@media (min-width : 320px) {
+    .swiperImg{
+        width: 100%;
+        height: calc(80%);
+        .swipertagStyle {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+        .mainImg {
+            max-width: 700px;
+            min-width: 275px;
+            width: 50vw;
+            z-index: -1;
+        }
+    }
+}
+
+@media (min-width : 991px) {
+    .swiperImg {
+        height: calc(48vw + 30px);
+        .swipertagStyle {
+            left: 15px;
+            top: 15px;
+        }
+    }
+}
+
+// 반응형 스케일 조정
+.scaleCustom {
+    @media (max-width : 990px) {
+        transform: scale(1.5);
+    }
+    @media (max-width : 550px) {
+        transform: scale(1.3);
+    }
+    @media (max-width : 480px) {
+        transform: scale(1);
+    }
+}

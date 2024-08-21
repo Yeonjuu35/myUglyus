@@ -298,8 +298,7 @@ html body {
 }
 .fontMainSwiper {
     font-size: 38px;
-    font-weight: 700;
-    line-height: 3rem;
+    line-height: 3.3rem;
 }
 .fontText {
     font-size: 16px;
@@ -395,6 +394,10 @@ html body {
 }
 
 @media (max-width : 1122px) {
+    .fontMainSwiper {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
     .fontFooterText {
         font-size: 0.625rem;
     }

@@ -2,9 +2,9 @@ import React from 'react'
 import { DefalutButton, SnsIcon } from '../Common/style';
 import '../../scss/footer.scss';
 
-function Footer({wavecls}) {
+function Footer({waveBg}) {
     return (
-        <footer className={`customFluid py-5 ${wavecls}`}>
+        <footer className={`customFluid py-5 ${waveBg}`}>
             <div className='d-flex flex-column flex-lg-row justify-content-between container customWidthS'>
                 <div className='d-flex flex-column px-3 px-lg-0'>
                     <h1 className='order-lg-3 order-0 mb-3 mb-lg-0'>

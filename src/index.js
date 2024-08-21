@@ -6,13 +6,13 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter } from 'react-router-dom';
+import 'swiper/swiper-bundle.min.css';
 
 // 폰트
 import '../src/font/font.css'
 
 // CSS
 import '../src/scss/common.scss';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

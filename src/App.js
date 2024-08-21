@@ -1,12 +1,18 @@
+import { Routes, Route } from 'react-router-dom';
+
 import Header from './component/Header/Header'
 import Footer from './component/Footer/Footer';
+import MainContent from './component/MainContent';
 import QuickMenu from './component/quick/Quickmenu';
 
 function App() {
   return (
     <>
       <Header></Header>
-      <Footer wavecls={'bgType1ReverseR basetop'}></Footer>
+      <Routes>
+          <Route path='/' element={<MainContent />}></Route>
+      </Routes> 
+      {/* <Footer waveBg={'bgType1ReverseR basetop'}></Footer> */}
       <QuickMenu></QuickMenu>
     </>
   );

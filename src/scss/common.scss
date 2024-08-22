@@ -22,7 +22,7 @@ ul, li, dl, dt, dd, a, p, h1, h2{
 .componentBlank {
     margin-bottom: 200px;
     @media (max-width : 990px) {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 }
 
@@ -202,9 +202,17 @@ ul, li, dl, dt, dd, a, p, h1, h2{
     }
 }
 
-// 컨테이너 사이즈(~ 991px 이상)
+// 컨테이너 커스텀(~ 991px 이상만 적용)
 .container.customWidthL {
     max-width: 1824px !important;
+    margin: 0 auto !important;
+    padding: 0;
+    @media (max-width : 990px) {
+        max-width: none !important;
+    }
+}
+.container.customWidthM {
+    max-width: 1600px !important;
     margin: 0 auto !important;
     padding: 0;
     @media (max-width : 990px) {
@@ -245,6 +253,14 @@ ul, li, dl, dt, dd, a, p, h1, h2{
     margin-bottom: 7px;
     @media (max-width : 990px) {
         margin-bottom: 0;
+    }
+}
+
+// 공용 디자인 요소
+.radiusCustom {
+    border-radius: 20px;
+    @media (max-width : 990px) {
+        border-radius: 10px;
     }
 }
 
@@ -307,9 +323,9 @@ html body {
 }
 .fontVegeSwiper {
     font-family: 'HSYuji-Regular';
-    font-size: 150px;
-    letter-spacing: -0.5rem;
+    font-size: 120px;
     color: $Uglyorange;
+    line-height: 1;
 }
 .fontReviewSubs {
     font-size: 14px;
@@ -393,6 +409,11 @@ html body {
     font-weight: 500;
 }
 
+@media (max-width : 1500px) {
+    .fontVegeSwiper {
+        font-size: 7vw;
+    }
+}
 @media (max-width : 1122px) {
     .fontMainSwiper {
         font-size: 2rem;
@@ -424,7 +445,7 @@ html body {
         font-size: 1rem;
     }
     .fontVegeSwiper {
-        font-size: 3.125rem;
+        font-size: 5rem;
     }
     .fontReviewSubs {
         font-size: 0.75rem;
@@ -480,5 +501,11 @@ html body {
     }
     .fontQuick {
         font-size: 0.65rem;
+    }
+}
+
+@media (max-width : 480px) {
+    .fontVegeSwiper {
+        font-size: 3.125rem;
     }
 }

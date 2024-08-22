@@ -9,7 +9,7 @@ function SwiperContent({info, dir}) {
     return (
         <div style={{backgroundColor : info["bgcolor"]}} className='d-flex align-items-center swiperImg'>
             <div className='container customWidthS d-flex align-items-center flex-column flex-lg-row'>
-                <div className='col-lg-6 d-flex flex-column ps-lg-5 pb-5 scaleCustom'>
+                <div className='col-lg-6 d-flex flex-column ps-lg-5 pb-5 pb-lg-0 scaleCustom'>
                     <h2 className='fontMainSwiper pb-lg-3 pb-2'>
                         {
                             titleArray.map((v, i) => (

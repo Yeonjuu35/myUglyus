@@ -89,7 +89,8 @@
                 "swipertitle" : "개성있는 외모에 싱그러움 가득!|영양 가득 친환경 채소박스",
                 "swiperleadcopy" : "영양만점 친환경 채소박스 구독하고|건강한 채소생활 시작하기!",
                 "btncolor" : "#FE663F",
-                "btntext" : "구독하기"
+                "btntext" : "구독하기",
+                "btnlink" : "vegebox_subscribe"
             },
             {
                 "bgcolor" : "#FFCECE",
@@ -101,7 +102,8 @@
                 "swipertitle" : "지구가 만든 그대로, 우리에게로|유기농 그대로 토마토 30포",
                 "swiperleadcopy" : "오직 어글리어스 공식몰에서만|최대 20% 할인중!",
                 "btncolor" : "#FF3C3F",
-                "btntext" : "구매하기"
+                "btntext" : "구매하기",
+                "btnlink" : "market_tomato"
             }
         ]
     },

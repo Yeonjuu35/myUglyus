@@ -2,7 +2,11 @@ import styled from "styled-components"
 
 // 버튼
 // 기본 버튼 
-export const DefalutButton = styled.button`
+export const DefalutButton = styled.a`
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    cursor: pointer;
     background : #FE663F;
     font-size: 15px;
     font-weight: 600;
@@ -12,7 +16,11 @@ export const DefalutButton = styled.button`
     border : none;
     border-radius : 20px;
 `
-export const BigButton = styled.button`
+export const BigButton = styled.a`
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    cursor: pointer;
     background: ${(props) => props.btncolor || '#FE663F'};
     font-size: 1.375em;
     font-weight: 600;
@@ -67,6 +75,7 @@ export const SnsIcon = styled.a`
 export const Title = styled.h2`
     font-size: 38px;
     font-weight: 700;
+    color : ${(props) => props.fontcolor || '#FE663F'};
     @media (max-width : 990px) {
         font-size: 18px;
     }

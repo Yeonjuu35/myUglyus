@@ -12,7 +12,7 @@ function App() {
       <Routes>
           <Route path='/' element={<MainContent />}></Route>
       </Routes> 
-      {/* <Footer waveBg={'bgType1ReverseR basetop'}></Footer> */}
+      <Footer waveBg={'bgType1ReverseR basetop'}></Footer>
       <QuickMenu></QuickMenu>
     </>
   );

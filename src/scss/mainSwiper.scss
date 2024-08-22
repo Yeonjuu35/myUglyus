@@ -10,28 +10,11 @@ $Uglygray : #9D9D9D;
 $Uglylightgray : #CECECE;
 $Uglyline : #E8E8E8;
 
-// MainSwiper 
-.rwdLayout {
-    transform: translateY(80.41px);
-    height: 177vw;
-    @media (min-width : 500px) {
-        height: 156vw;
-    }
-    @media (min-width : 768px) {
-        height: 145vw;
-    }
-    @media (min-width : 991px) {
-        transform: translateY(0);
-        height: auto;
-    }
-}
-
-
 // SwiperContent
 @media (min-width : 320px) {
     .swiperImg{
         width: 100%;
-        height: calc(80%);
+        padding: 39vw 0 18vw;
         .swipertagStyle {
             position: absolute;
             left: 5px;
@@ -41,14 +24,13 @@ $Uglyline : #E8E8E8;
             max-width: 700px;
             min-width: 275px;
             width: 50vw;
-            z-index: -1;
         }
     }
 }
 
 @media (min-width : 991px) {
     .swiperImg {
-        height: calc(48vw + 30px);
+        padding: 0;
         .swipertagStyle {
             left: 15px;
             top: 15px;

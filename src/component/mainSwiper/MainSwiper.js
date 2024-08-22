@@ -1,23 +1,25 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import usdata from '../../data/data.json';
 import SwiperContent from './SwiperContent';
-import '../../scss/mainSwiper.scss'
-
+import '../../scss/mainSwiper.scss';
 
 const MainSwiper = () => {
   const { mainSwiperInfo, dir } = usdata.mainSwiper;
+
   return (
     <>
-      <Swiper className="mySwiper rwdLayout">
-        {
-          mainSwiperInfo.map((v, i)=> {
-            return(
-              <SwiperSlide>
-                <SwiperContent info={v} dir={dir} />            
-              </SwiperSlide>
-            )
-          })
-        }
+      <Swiper className="mySwiper componentBlank"
+        // loop={true}
+        // autoplay={{delay: 4000, disableOnInteraction: false,}}
+        // modules={[Autoplay]}
+        // speed={700}
+      >
+        {mainSwiperInfo.map((v, i) => (
+          <SwiperSlide key={i}>
+            <SwiperContent info={v} dir={dir} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

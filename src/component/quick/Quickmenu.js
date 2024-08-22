@@ -22,7 +22,7 @@ const QuickMenu = () => {
       <aside className="quickStyle">
         <div className='radishQuick'>
             <ul className='d-flex flex-lg-column'>
-                <Quickitem></Quickitem>             
+              <Quickitem></Quickitem>             
             </ul>
             <Link to="#none" className='quickplusicon d-none d-lg-block'>
                 <img src="/img/quick/plus.svg" alt="더보기" className='quickIconPlus'/>

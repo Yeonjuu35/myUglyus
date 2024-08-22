@@ -1,0 +1,195 @@
+// 컬러
+$Uglybg : #FFF4E0;
+$Uglyred : #FF2F2F;
+$Uglyorange : #FE663F;
+$Uglygreen : #5EAB42;
+$Uglybrawn : #CD8F50;
+$Uglypupple : #B552E4;
+$Uglydarkgray : #333333;
+$Uglygray : #9D9D9D;
+$Uglylightgray : #CECECE;
+$Uglyline : #E8E8E8;
+
+.vegeCustom {
+    max-width: 600px;
+    min-width: 200px;
+    width: 30vw;
+    @media (max-width : 990px) {
+        width: 80vw;
+    }
+}
+.vegeImg {
+    max-width: 500px;
+    min-width: 230px;
+}
+
+.carrot {
+    left: -20px;
+    top: 5px;
+}
+.bokchoy {
+    left: 10px;
+    top: 4px;
+}
+.cucumber {
+    left: 40px;
+}
+.lemon {
+    left: 37px;
+    top: -8px;
+    @media (max-width : 990px) {
+        left: 23px;
+        top: -2px;
+    }
+}
+.mushroom {
+    left: -17px;
+    top: 25px;
+    @media (max-width : 990px) {
+        left: -9px;
+    }
+}
+.paprika {
+    left: 38px;
+    top: 16px;
+    @media (max-width : 990px) {
+        left: 29px;
+    }
+}
+
+.carrotBg {
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../public/img/vegeSwiper/carrot2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;        
+        z-index: -1; 
+    }
+}
+.bokchoyBg {
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../public/img/vegeSwiper/bokchoy2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: -1; 
+    }
+}
+.cucumberBg {
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../public/img/vegeSwiper/cucumber2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: -1; 
+    }
+}
+.lemonBg {
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../public/img/vegeSwiper/lemon2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: -1; 
+    }
+}
+.mushroomBg {
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../public/img/vegeSwiper/mushroom2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: -1; 
+    }
+}
+.paprikaBg {
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../public/img/vegeSwiper/paprika2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        z-index: -1; 
+    }
+}
+
+@media (min-width : 991px) {
+    .customHeight {
+        width: 100%;
+        height: 550px;
+    }
+    .whitebgL {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+        z-index: 10;
+        height: 100%;
+        padding-right: 80px;
+    }
+    .whitebgR {
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+        z-index: 10;
+        height: 100%;
+        padding-left: 80px;
+    }
+}
+
+.hiddenCustom {
+    overflow: visible !important;
+    @media (max-width : 990px) {
+        overflow: hidden !important;
+    }
+}
+
+@media (max-width : 990px) {
+    .whitebg:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left:0; 
+        top:0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0) 98%, rgba(255, 255, 255, 1) 100%);
+        z-index: 10;
+    }
+}

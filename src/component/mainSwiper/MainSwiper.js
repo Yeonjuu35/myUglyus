@@ -4,16 +4,16 @@ import usdata from '../../data/data.json';
 import SwiperContent from './SwiperContent';
 import '../../scss/mainSwiper.scss';
 
-const MainSwiper = () => {
+function MainSwiper({componentBlank, bgStyle}) {
   const { mainSwiperInfo, dir } = usdata.mainSwiper;
 
   return (
     <>
-      <Swiper className="mySwiper componentBlank"
-        // loop={true}
-        // autoplay={{delay: 4000, disableOnInteraction: false,}}
-        // modules={[Autoplay]}
-        // speed={700}
+      <Swiper className={`mySwiper ${bgStyle} ${componentBlank}`}
+        loop={true}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        modules={[Autoplay]}
+        speed={700}
       >
         {mainSwiperInfo.map((v, i) => (
           <SwiperSlide key={i}>
@@ -23,6 +23,6 @@ const MainSwiper = () => {
       </Swiper>
     </>
   );
-};
+}
 
 export default MainSwiper;

@@ -8,12 +8,12 @@ import QuickMenu from './component/quick/Quickmenu';
 function App() {
   return (
     <>
-      <Header></Header>
+      <Header />
       <Routes>
-          <Route path='/' element={<MainContent />}></Route>
+          <Route path='/' element={<MainContent />} />
       </Routes> 
-      <Footer waveBg={'bgType1ReverseR basetop'}></Footer>
-      <QuickMenu></QuickMenu>
+      <Footer bgStyle={''} />
+      <QuickMenu />
     </>
   );
 }

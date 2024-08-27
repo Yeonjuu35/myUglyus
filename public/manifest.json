@@ -4,7 +4,7 @@
   "description": "기획부터 디자인, 소스제작, 리액트 구동까지 1인 작업으로 완성한 리액트 SPA 포트폴리오 입니다.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./img/seo/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },

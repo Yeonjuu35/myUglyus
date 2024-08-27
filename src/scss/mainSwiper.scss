@@ -23,14 +23,14 @@ $Uglyline : #E8E8E8;
         .mainImg {
             max-width: 700px;
             min-width: 275px;
-            width: 50vw;
+            width: 80vw;
         }
     }
 }
 
 @media (min-width : 991px) {
     .swiperImg {
-        padding: 0;
+        padding: 220px 0;
         .swipertagStyle {
             left: 15px;
             top: 15px;

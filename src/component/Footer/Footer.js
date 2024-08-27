@@ -2,9 +2,9 @@ import React from 'react'
 import { DefalutButton, SnsIcon } from '../Common/style';
 import '../../scss/footer.scss';
 
-function Footer({waveBg}) {
+function Footer({bgStyle}) {
     return (
-        <footer className={`customFluid py-5 ${waveBg}`}>
+        <footer className={`customFluid py-5 ${bgStyle}`}>
             <div className='d-flex flex-column flex-lg-row justify-content-between container customWidthS'>
                 <div className='d-flex flex-column px-3 px-lg-0'>
                     <h1 className='order-lg-3 order-0 mb-3 mb-lg-0'>
@@ -24,8 +24,8 @@ function Footer({waveBg}) {
                         </div>
                     </div>
                     <div className='d-flex mb-lg-5 mb-0 pb-4 pb-lg-0 align-items-center'>
-                        <DefalutButton className='me-3'>문의하기</DefalutButton>
-                        <DefalutButton>자주묻는질문</DefalutButton>
+                        <DefalutButton large={false} className='me-3'>문의하기</DefalutButton>
+                        <DefalutButton large={false}>자주묻는질문</DefalutButton>
                     </div>
                 </div>
                 <div className='d-flex flex-column justify-content-between footerLine px-3 px-lg-0 pb-5'>

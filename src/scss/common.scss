@@ -10,6 +10,13 @@ $Uglygray : #9D9D9D;
 $Uglylightgray : #CECECE;
 $Uglyline : #E8E8E8;
 
+.colorBg {
+    background-color: $Uglybg;
+}
+.colorOrange {
+    color: $Uglyorange;
+}
+
 ul, li, dl, dt, dd, a, p, h1, h2{
     margin: 0;
     padding: 0;
@@ -19,10 +26,16 @@ ul, li, dl, dt, dd, a, p, h1, h2{
 }
 
 // 컴포넌트 간격 여백
-.componentBlank {
-    margin-bottom: 200px;
+html body .componentBlankS {
+    padding-bottom: 100px !important;
     @media (max-width : 990px) {
-        margin-bottom: 60px;
+        padding-bottom: 30px !important;
+    }
+}
+html body .componentBlankL {
+    padding-bottom: 200px !important;
+    @media (max-width : 990px) {
+        padding-bottom: 60px !important;
     }
 }
 
@@ -272,6 +285,10 @@ html body {
     color: $Uglydarkgray;
 }
 
+.customLineheight {
+    line-height: 1.2;
+}
+
 // 폰트 두께
 .fontThin {
     font-weight: 100 !important;
@@ -347,7 +364,7 @@ html body {
 }
 .fontMarketName {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .fontMarketPrice {
     font-size: 16px;

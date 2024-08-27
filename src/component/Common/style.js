@@ -2,7 +2,9 @@ import styled from "styled-components"
 
 // 버튼
 // 기본 버튼 
-export const DefalutButton = styled.a`
+export const DefalutButton = styled.a.withConfig({
+    shouldForwardProp: (prop) => prop !== 'large'
+})`
     display: flex;
     justify-content : center;
     align-items : center;
@@ -16,7 +18,9 @@ export const DefalutButton = styled.a`
     border : none;
     border-radius : 20px;
 `
-export const BigButton = styled.a`
+export const BigButton = styled.a.withConfig({
+    shouldForwardProp: (prop) => prop !== 'fontcolor'
+})`
     display: flex;
     justify-content : center;
     align-items : center;
@@ -72,7 +76,9 @@ export const SnsIcon = styled.a`
 `
 
 // 컴포넌트 텍스트
-export const Title = styled.h2`
+export const Title = styled.h2.withConfig({
+    shouldForwardProp: (prop) => prop !== 'fontcolor'
+})`
     font-size: 38px;
     font-weight: 700;
     color : ${(props) => props.fontcolor || '#FE663F'};
@@ -80,20 +86,53 @@ export const Title = styled.h2`
         font-size: 18px;
     }
 `
-export const SubTitle = styled.p`
+export const SubTitle = styled.p.withConfig({
+    shouldForwardProp: (prop) => prop !== 'fontcolor'
+})`
     font-size: 22px;
     font-weight: 600;
+    color : ${(props) => props.fontcolor || '#333333'};
     @media (max-width : 990px) {
         font-size: 12px;
     }
 `
-export const Leadcopy = styled.p`
+export const Leadcopy = styled.p.withConfig({
+    shouldForwardProp: (prop) => prop !== 'fontcolor'
+})`
     font-size: 1.125em;
     font-weight: 300;
-    line-height: 1.75em;
+    color : ${(props) => props.fontcolor || '#333333'};
+    line-height: 1.5em;
     @media (max-width : 990px) {
         font-size: 0.625em;
         line-height: 1.5em;
+    }
+`
+export const BannerTitle = styled.h2.withConfig({
+    shouldForwardProp: (prop) => prop !== 'fontcolor'
+})`
+    font-size: 2em;
+    font-weight: 700;
+    color : ${(props) => props.fontcolor || '#333333'};
+    @media (max-width : 990px) {
+        font-size: 1em;
+    }
+    @media (max-width : 440px) {
+        font-size: 0.8em;
+    }
+`
+export const BannerSubTitle = styled.p.withConfig({
+    shouldForwardProp: (prop) => prop !== 'fontcolor'
+})`
+    font-size: 1em;
+    font-weight: 600;
+    color : ${(props) => props.fontcolor || '#333333'};
+    @media (max-width : 990px) {
+        font-size: 0.75em;
+        font-weight: 500;
+    }
+    @media (max-width : 440px) {
+        font-size: 0.65em;
     }
 `
 
@@ -105,7 +144,7 @@ export const TagType1 = styled.p`
     color : #FFFFFF;
     font-weight: 600;
     border-radius : 20px;
-    padding : 0.05em 0.7em;
+    padding : 0.2em 0.7em;
     @media (max-width : 990px) {
         font-size: 8px;
         border-radius : 10px;

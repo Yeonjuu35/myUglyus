@@ -89,7 +89,7 @@ function Header() {
                         </a>
                     </h1>
                     <a href="#" className='eventTimer d-flex justify-content-center align-items-center d-lg-none'>
-                        <img src="./img/header/clock.svg" alt="#" class="me-2" />
+                        <img src="./img/header/clock.svg" alt="#" className="me-2" />
                         <span className='fontEventTimer'>올해 마지막 한정판매 시작!</span>
                     </a>
                 </div>

@@ -12,23 +12,41 @@ $Uglyline : #E8E8E8;
 
 // ProductInfo 
 .productStyleType1 {
-    max-width: 324px;
+    max-width: 335px;
     height: auto;
     border-radius: 20px 20px 0 0;
-    @media (max-width : 990px) {
+    @media (max-width : 1200px) {
         max-width: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+    @media (max-width : 1024px) {
+        max-width: 250px;
+        border-radius: 10px 10px 0 0;
+    }
+    @media (max-width : 990px) {
+        max-width: 145px;
         border-radius: 10px 10px 0 0;
     }
 }
 .textboxType1 {
-    max-width: 324px;
+    max-width: 335px;
     height: 100px;
     background-color: #ffffff;
     border-radius: 0 0 20px 20px;
-    @media (max-width : 990px) {
+    @media (max-width : 1200px) {
         max-width: 300px;
-        height: 60px;
-        border-radius: 10px 10px 0 0;
+        height: 100px;
+        border-radius: 0 0 10px 10px;
+    }
+    @media (max-width : 1024px) {
+        max-width: 250px;
+        height: 100px;
+        border-radius: 0 0 10px 10px;
+    }
+    @media (max-width : 990px) {
+        max-width: 145px;
+        height: 58px;
+        border-radius: 0 0 10px 10px;
     }
 }
 .productStyleType2 {
@@ -71,5 +89,24 @@ $Uglyline : #E8E8E8;
     padding: 150px;
     @media (max-width : 1400px) {
         padding: 0 25px;
+    }
+}
+
+// MarketType1
+.container.customMarket {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    padding: 0;
+    @media (min-width : 659px) {
+        max-width: 550px !important;
+    }
+    @media (min-width : 660px) {
+        max-width: 640px !important;
+    }
+    @media (min-width : 991px) {
+        max-width: 900px !important;
+    }
+    @media (min-width : 1400px) {
+        max-width: 1400px !important;
     }
 }

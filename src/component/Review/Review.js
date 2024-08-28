@@ -1,38 +1,59 @@
-import { Title, Leadcopy, DefalutButton } from '../Common/style'
+import React from 'react';
+import { Title, Leadcopy, DefalutButton } from '../Common/style';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import ReviewImg from './ReviewImg';
+import ReviewContent from './ReviewContent';
+import usdata from '../../data/data.json';
+import '../../scss/review.scss'
 
-function Review({bgStyle, componentBlank}) {
+function Review({ bgStyle, componentBlank }) {
+    const { reviewinfo, dir } = usdata.review;
     return (
-        <section className={`${bgStyle} ${componentBlank}`}>
+        <section className={`${bgStyle} ${componentBlank} py-5`}>
             <div className='d-flex flex-column align-items-center'>
-                <Title className='pb-lg-3 pb-2'>신경쓰지 않아도 집 앞까지 신선하게!</Title>
-                <Leadcopy>실제 고객이 말하는 남다른 채소박스 구독 후기 보고가세요.</Leadcopy>
-                <Swiper className=''
-                    // loop={true}
-                    // loopedSlides={2}
-                    // slidesPerView={1.1}
-                    // spaceBetween={100}
-                    // centeredSlides={true}
-                    // autoplay={{ delay: 3000, disableOnInteraction: false, }} 
-                    // modules={[Autoplay]}
-                    // speed={700}
+                <div className='pb-lg-5 pb-3'>
+                    <Title className='pb-lg-3 pb-2 text-center'>신경쓰지 않아도 집 앞까지 신선하게!</Title>
+                    <Leadcopy className='text-center'>실제 고객이 말하는 남다른 채소박스 구독 후기 보고가세요.</Leadcopy>
+                </div>
+                <Swiper className='w-100 pb-5'
+                    loop={true}
+                    slidesPerView={5.5}
+                    spaceBetween={24}   
+                    centeredSlides={true}             
+                    // autoplay={{ delay: 3000, disableOnInteraction: false }}     
+                    // modules={[Autoplay]}              
+                    speed={700}
+                    breakpoints={{
+                        1400: {
+                            slidesPerView: 5.5,
+                        },
+                        990: {
+                            slidesPerView: 3.5,
+                        },
+                        320: {
+                            slidesPerView: 1.5,
+                        }
+                    }}
                 >
-                    <SwiperSlide>
-                        <ReviewImg
-                            imgSrc=""
-                            imgAlt=""
-                            userReview=""
-                            vegebox=""
-                            username=""
-                        ></ReviewImg>
-                    </SwiperSlide>
+                    {
+                        reviewinfo.map((v, i) => (
+                            <SwiperSlide key={`review${i}`}>
+                                <ReviewContent
+                                    imgSrc={`${dir}${v.reviewimgNm}.${v.reviewimgfile}`}
+                                    imgAlt={v.reviewimgAlt}
+                                    userReview={v.userReview}
+                                    vegebox={v.vegebox}
+                                    username={v.username}
+                                />
+                            </SwiperSlide>
+                        ))
+                    }
                 </Swiper>
                 <DefalutButton large={true}>이용후기 보러가기</DefalutButton>
             </div>
         </section>
-    )
+    );
 }
 
-export default Review
+export default Review;
+

@@ -38,6 +38,12 @@ html body .componentBlankL {
         padding-bottom: 60px !important;
     }
 }
+html body .componentBlankUD {
+    padding: 200px 0 !important;
+    @media (max-width : 990px) {
+        padding: 0 !important;
+    }
+}
 
 // 컴포넌트별 백그라운드
 // left, transform 분리하기
@@ -355,8 +361,7 @@ html body {
 .fontReviewText {
     font-size: 13px;
     font-weight: 300;
-    letter-spacing: -0.4rem;
-    line-height: 1.3rem;
+    line-height: 1.1rem;
 }
 .fontTypeTag {
     font-size: 15px;

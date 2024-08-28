@@ -14,15 +14,15 @@ function ProductInfo({ productHref, productImg, productAlt, productNm, discountR
                     </div>
                     <img src={productImg} alt={productAlt} className={productStyle} />
                 </div>
-                <div className={`d-flex flex-column justify-content-center px-lg-4 px-3 ${textboxStyle}`}>
+                <div className={`d-flex flex-column justify-content-center px-lg-4 px-2 ${textboxStyle}`}>
                     <p className="fontMarketName customLineheight">{productNm}</p>
                     <div className="d-flex align-items-center pb-1">
-                        {discountRate && <p className="fontMarketPrice colorOrange pe-2">{discountRate}</p>}
-                        <p className="fontMarketPrice">{price}</p>
-                        {originalPrice && <p className="fontMarketPriceLine ps-2">{originalPrice}</p>}
+                        {discountRate && <p className="fontMarketPrice colorOrange">{discountRate}</p>}
+                        <p className="fontMarketPrice px-lg-2 px-1">{price}</p>
+                        {originalPrice && <p className="fontMarketPriceLine">{originalPrice}</p>}
                     </div>
                     <div className="d-flex align-items-center">
-                        <img src="/img/market/review.svg" alt="리뷰" className="reviewImg pe-lg-2 pe-1 img-fluid" />
+                        <img src="/img/market/reviewicon.svg" alt="리뷰" className="reviewImg pe-lg-2 pe-1" />
                         <p className="fontMarketReview">{reviewCount}</p>
                     </div>
                 </div>

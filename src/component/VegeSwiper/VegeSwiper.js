@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 import { DefalutButton, Title } from '../Common/style'
+import { Autoplay } from 'swiper/modules';
 import '../../scss/vegeSwiper.scss'
 
 function VegeSwiper({componentBlank, bgStyle}) {

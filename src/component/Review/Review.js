@@ -17,21 +17,57 @@ function Review({ bgStyle, componentBlank }) {
                 </div>
                 <Swiper className='w-100 pb-5'
                     loop={true}
-                    slidesPerView={5.5}
+                    // slidesPerView={'auto'}
                     spaceBetween={24}   
                     centeredSlides={true}             
                     // autoplay={{ delay: 3000, disableOnInteraction: false }}     
                     // modules={[Autoplay]}              
                     speed={700}
                     breakpoints={{
-                        1400: {
+                        1800: {
                             slidesPerView: 5.5,
                         },
-                        990: {
+                        1700: {
+                            slidesPerView: 5,
+                        },
+                        1600: {
+                            slidesPerView: 4.8,
+                        },
+                        1380: {
+                            slidesPerView: 4,
+                        },
+                        1260: {
+                            slidesPerView: 3.7,
+                        },
+                        1100: {
+                            slidesPerView: 3.4,
+                        },
+                        1024: {
+                            slidesPerView: 3.2,
+                        },
+                        991: {
+                            slidesPerView: 2.8,
+                        },
+                        900: {
+                            slidesPerView: 4.5,
+                        },
+                        758: {
+                            slidesPerView: 4,
+                        },
+                        620: {
                             slidesPerView: 3.5,
                         },
+                        570: {
+                            slidesPerView: 2.8,
+                        },
+                        450: {
+                            slidesPerView: 2.5,
+                        },
+                        375: {
+                            slidesPerView: 2,
+                        },
                         320: {
-                            slidesPerView: 1.5,
+                            slidesPerView: 1.8,
                         }
                     }}
                 >

@@ -523,11 +523,11 @@ html body {
         font-size: 0.5rem;
     }
     .fontMapTitle {
-        font-size: 1rem;
-        line-height: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
     .fontMapSubtitle {
-        font-size: 0.75rem;
+        font-size: 1.2rem;
     }
     .fontFormboxTitle {
         font-size: 1.0625rem;
@@ -552,5 +552,15 @@ html body {
 @media (max-width : 480px) {
     .fontVegeSwiper {
         font-size: 3.125rem;
+    }
+    .fontMapTitle {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .fontMapSubtitle {
+        font-size: 0.7rem;
+    }
+    .fontText {
+        font-size: 0.7rem;
     }
 }

@@ -8,14 +8,15 @@ function Interview({ targetnum }) {
     const altText = mapinfo[targetnum]["pronm"];
     const protitleArray = mapinfo[targetnum]["protitle"].split('|');
     const interviewtext = mapinfo[targetnum]["protext"];
+    const marketlink = mapinfo[targetnum]["prolink"]
 
     return (
         <div className='d-flex flex-lg-column flex-wrap'>
             <div className='col-lg-12 col-6'>
-                <img className='mapimg radiusCustom mb-0 mb-lg-3 img-fluid' src={imageSrc} alt={`${mapinfo[targetnum]["pronm"]} 생산자님`} />
+                <img className='radiusCustom mb-0 mb-lg-3 img-fluid' src={imageSrc} alt={`${mapinfo[targetnum]["proimgex"]} 생산자 ${mapinfo[targetnum]["pronm"]}님`} />
             </div>
-            <div className='col-lg-12 col-6 ps-3 ps-lg-0 d-flex flex-column justify-content-between'>
-                <p className='fontMapTitle pb-0 pb-lg-2'>
+            <div className='col-lg-12 col-6 ps-2 ps-lg-0 d-flex flex-column justify-content-between'>
+                <p className='fontMapTitle pb-0 pb-lg-3'>
                     {
                         protitleArray.map((v, i) => (
                             i === 0 ? <span key={`pro${i}`} className="d-none d-xxl-inline">{v} </span> : i === 1 ? <span key={`pro${i}`} className="d-block d-xxl-inline">{v}</span> : <span key={`pro${i}`} className="d-block">{v}</span>
@@ -25,7 +26,7 @@ function Interview({ targetnum }) {
                 <p className="fontMapSubtitle pb-0 pb-lg-4">{altText}님의 이야기</p>
                 <p className='pb-0 pb-lg-4 fontText'>
                     <span className="d-none d-lg-inline">{interviewtext}</span>
-                    <a href='#'>
+                    <a href={marketlink}>
                         <span className="fontText mt-auto d-flex d-lg-none justify-content-end">+ 더보기</span>
                     </a>
                 </p>

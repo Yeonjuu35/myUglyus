@@ -12,8 +12,8 @@ function Form({ bgStyle, componentBlank }) {
                         <div className="mb-lg-0 mb-4 text-center">
                             <Title className="pb-lg-3 pb-2" fontcolor="#333333">구출이 필요한 농산물이 있나요?</Title>
                             <Leadcopy>
-                                구출이 필요한 농산물이 있다면 정보 확인 후 연락 드리겠습니다.
-                                <span className="d-none d-lg-block text-nowrap">회신까지 2~3일 정도 소요될 수 있으며, 최대한 빠르게 연락 드릴 수 있도록 하겠습니다.</span>
+                                구출이 필요한 농산물이 있다면 확인 후 연락 드리겠습니다.
+                                <span className="d-none d-lg-block text-nowrap">회신까지 2~3일 정도 소요될 수 있으며, 빠르게 연락 드리겠습니다.</span>
                             </Leadcopy>
                         </div>
                     </div>

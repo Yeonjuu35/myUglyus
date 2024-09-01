@@ -3,7 +3,7 @@ import '../../scss/vegeSubs.scss'
 
 function Subscribe({ bgStyle, componentBlank }) {
     return (
-        <section className={`py-5 ${bgStyle} ${componentBlank}`}>
+        <section className={`${bgStyle} ${componentBlank} position-relative`}>
             <div className='d-flex flex-column align-items-center customPadding'>
                 <Title fontcolor="#ffffff" className='pb-lg-3 pb-2 text-center'>
                     나를 위한 건강하고 맛있는 친환경 장보기

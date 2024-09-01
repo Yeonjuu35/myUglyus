@@ -13,3 +13,67 @@ $Uglyline : #E8E8E8;
 .customPadding {
     padding: 200px 0;
 }
+
+
+.vegeSubsBgL{
+    &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width:100vw;
+        height: 15.63vw;
+        background:url(../../public/img/vegeSubs/vegeSubsBgL_top.svg);
+        background-repeat: no-repeat;
+        background-position: center top 0;
+        background-size: contain;
+        z-index: 1;
+        @media (max-width : 990px) {
+            display: none;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width:100vw;
+        height: 15.63vw;
+        background:url(../../public/img/vegeSubs/vegeSubsBgL_bottom.svg);
+        background-repeat: no-repeat;
+        background-position: center top 50;
+        background-size: contain;
+        z-index: 1;
+        @media (max-width : 990px) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width : 990px) {
+    .vegeSubsBgS{
+        &:before {
+            position: absolute;
+            content: "";
+            display: block;
+            width:100vw;
+            height: 10.10vw;
+            background:url(../../public/img/vegeSubs/vegeSubsBg_S.svg);
+            background-repeat: no-repeat;
+            background-position: center top 0;
+            background-size: contain;
+            z-index: 1;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            width:100vw;
+            height: 10.10vw;
+            background:url(../../public/img/vegeSubs/vegeSubsBg_S.svg);
+            background-repeat: no-repeat;
+            background-position: center top 50;
+            background-size: contain;
+            z-index: 1;
+        }
+    }
+}
+

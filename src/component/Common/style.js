@@ -47,20 +47,25 @@ export const BigButton = styled.a.withConfig({
 
 // 레시피 탭 버튼
 export const RecipeButton = styled.button`
-    background: transparent;
+    color: ${({ active }) => (active ? '#FE663F' : '#CECECE')}; /* active 상태에서 글자색 변경 */
     font-size: 10px;
     font-weight: 600;
-    color : #CECECE; 
-    width : auto;
-    line-height : 2.55;
-    padding : 0 2em;
+    background: transparent;
+    display: inline-block; /* 버튼 요소의 기본 레이아웃을 유지하기 위해 inline-block으로 설정 */
+    cursor: pointer; 
     border : none;
-    @media (min-width : 991px) {
-        border : 1px solid #CECECE;
-        border-radius : 20px; 
+    @media (min-width: 991px) {
+        border-radius: 20px;
         font-size: 15px;
+        background: ${({ active }) => (active ? '#FE663F' : 'transparent')};
+        color: ${({ active }) => (active ? '#fff' : '#CECECE')};
+        width: auto;
+        line-height: 2.55;
+        padding: 0 2em;
+        border: ${({ active }) => (active ? 'none' : '1px solid #CECECE')};
+        border-radius: 20px;
     }
-`
+`;
 
 // sns 아이콘 버튼
 export const SnsIcon = styled.a`
@@ -153,7 +158,7 @@ export const TagType1 = styled.p`
 export const TagType2 = styled.p`
     display : inline-block;
     background: ${(props) => props.tag1Color || '#FE663F'};
-    font-size: 1.5em;
+    font-size: 1.3em;
     color : #FFFFFF;
     font-weight: 600;
     border-radius : 3.125em;

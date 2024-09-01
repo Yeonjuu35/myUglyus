@@ -13,6 +13,9 @@ $Uglyline : #E8E8E8;
 .colorBg {
     background-color: $Uglybg;
 }
+.colorBg2 {
+    background-color: #82C26A;
+}
 .colorOrange {
     color: $Uglyorange;
 }
@@ -26,20 +29,32 @@ ul, li, dl, dt, dd, a, p, h1, h2{
 }
 
 // 컴포넌트 간격 여백
-html body .componentBlankS {
+html body .componentBlankUpS {
+    padding-top: 100px !important;
+    @media (max-width : 990px) {
+        padding-top: 30px !important;
+    }
+}
+html body .componentBlankUpL {
+    padding-top: 200px !important;
+    @media (max-width : 990px) {
+        padding-top: 60px !important;
+    }
+}
+html body .componentBlankDownS {
     padding-bottom: 100px !important;
     @media (max-width : 990px) {
         padding-bottom: 30px !important;
     }
 }
-html body .componentBlankL {
+html body .componentBlankDownL {
     padding-bottom: 200px !important;
     @media (max-width : 990px) {
         padding-bottom: 60px !important;
     }
 }
 html body .componentBlankUD {
-    padding: 200px 0 !important;
+    padding: 100px 0 !important;
     @media (max-width : 990px) {
         padding: 0 !important;
     }
@@ -434,6 +449,14 @@ html body {
 @media (max-width : 1500px) {
     .fontVegeSwiper {
         font-size: 7vw;
+    }
+}
+@media (max-width : 1400px) {
+    .fontRecipeName {
+        font-size: 20px;
+    }
+    .fontRecipeText {
+        font-size: 14px;
     }
 }
 @media (max-width : 1122px) {

@@ -104,6 +104,19 @@
                 "btncolor" : "#FF3C3F",
                 "btntext" : "구매하기",
                 "btnlink" : "market_tomato"
+            },
+            {
+                "bgcolor" : "#EEEDEB",
+                "swipernm" : "어글리어스 산지 캠페인",
+                "swipertag" : "",
+                "swipertagcolor" : "",
+                "swiperimgnm" : "event_letter",
+                "swiperimgfile" : "png",
+                "swipertitle" : "어글리어스 산지 캠페인|당신이 구해 준 채소 한 알",
+                "swiperleadcopy" : "어글리어스와 협업 중인 생산자님에게서 온 편지를 읽고|응원의 메세지를 남겨주신 분께 특별한 선물을 보내드립니다!",
+                "btncolor" : "#74A072",
+                "btntext" : "편지 확인하러가기",
+                "btnlink" : "event_letter"
             }
         ]
     },
@@ -290,6 +303,255 @@
                     }
                 ]
             }
+    },
+    "recipe" : {
+        "dir" : "./img/recipe/",
+        "recipeinfo" : [
+            {
+                "btnNm" : "콩나물",
+                "recipe" : [
+                    {
+                        "imgNm" : "beansprout_bab",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "콩나물 밥",
+                        "foodNm" : "콩나물 밥",
+                        "userNm" : "은주네",
+                        "heart" : "999+",
+                        "tags" : [
+                            {
+                                "text" : "BEST", 
+                                "color": "#FE663F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "beansprout_Bibimbap",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "전주비빔밥",
+                        "foodNm" : "전주비빔밥",
+                        "userNm" : "냠냠",
+                        "heart" : "97",
+                        "tags" : [
+                            {
+                                "text" : "NEW", 
+                                "color": "#5EAB42"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "beansprout_muchim",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "콩나물 무침",
+                        "foodNm" : "콩나물 무침",
+                        "userNm" : "소금소금",
+                        "heart" : "756",
+                        "tags" : [
+                            {
+                                "text" : "HOT", 
+                                "color": "#FF2F2F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "beansprout_soup",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "콩나물 국",
+                        "foodNm" : "콩나물 국",
+                        "userNm" : "지유맘",
+                        "heart" : "118",
+                        "tags" : [
+                            {
+                                "text" : "NEW", 
+                                "color": "#5EAB42"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "btnNm" : "당근",
+                "recipe" : [
+                    {
+                        "imgNm" : "carrot_cake",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "당근 케이크",
+                        "foodNm" : "당근 케이크",
+                        "userNm" : "당근밭토끼마스터",
+                        "heart" : "67",
+                        "tags" : [
+                            {
+                                "text" : "NEW", 
+                                "color": "#5EAB42"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "carrot_gimbab",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "당근 김밥",
+                        "foodNm" : "당근 김밥",
+                        "userNm" : "김밥천국",
+                        "heart" : "527",
+                        "tags" : [
+                            {
+                                "text" : "HOT", 
+                                "color": "#FF2F2F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "carrot_jean",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "당근 전",
+                        "foodNm" : "당근 전",
+                        "userNm" : "밍밍규",
+                        "heart" : "756",
+                        "tags" : [
+                            {
+                                "text" : "HOT", 
+                                "color": "#FF2F2F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "carrot_rapees",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "당근 라페",
+                        "foodNm" : "당근 라페",
+                        "userNm" : "당근바니당근",
+                        "heart" : "999+",
+                        "tags" : [
+                            {
+                                "text" : "BEST", 
+                                "color": "#FE663F"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "btnNm" : "오이",
+                "recipe" : [
+                    {
+                        "imgNm" : "cucumber_coldsoup",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "오이 냉국",
+                        "foodNm" : "오이 냉국",
+                        "userNm" : "유진맘",
+                        "heart" : "999+",
+                        "tags" : [
+                            {
+                                "text" : "BEST", 
+                                "color": "#FE663F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "cucumber_roll",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "오이 롤",
+                        "foodNm" : "오이 롤",
+                        "userNm" : "데이지",
+                        "heart" : "27",
+                        "tags" : [
+                            {
+                                "text" : "NEW", 
+                                "color": "#5EAB42"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "cucumber_rustic",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "오이소박이",
+                        "foodNm" : "오이소박이",
+                        "userNm" : "무침마스터",
+                        "heart" : "716",
+                        "tags" : [
+                            {
+                                "text" : "HOT", 
+                                "color": "#FF2F2F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "cucumber_sandwich",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "오이 샌드위치",
+                        "foodNm" : "오이 샌드위치",
+                        "userNm" : "솔솔빵",
+                        "heart" : "108",
+                        "tags" : [
+                            {
+                                "text" : "NEW", 
+                                "color": "#5EAB42"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "btnNm" : "표고버섯",
+                "recipe" : [
+                    {
+                        "imgNm" : "mushrooms_jeon",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "표고버섯 전",
+                        "foodNm" : "표고버섯 전",
+                        "userNm" : "비오는날은전",
+                        "heart" : "268",
+                        "tags" : [
+                            {
+                                "text" : "HOT", 
+                                "color": "#FF2F2F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "mushrooms_milleFeuilleNabe",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "밀푀유 나베",
+                        "foodNm" : "밀푀유 나베",
+                        "userNm" : "따끈따끈",
+                        "heart" : "999+",
+                        "tags" : [
+                            {
+                                "text" : "BEST", 
+                                "color": "#FE663F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "mushrooms_ricebowl",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "표고버섯 덮밥",
+                        "foodNm" : "표고버섯 덮밥",
+                        "userNm" : "덮밥한그릇",
+                        "heart" : "726",
+                        "tags" : [
+                            {
+                                "text" : "HOT", 
+                                "color": "#FF2F2F"
+                            }
+                        ]
+                    },
+                    {
+                        "imgNm" : "mushrooms_tangsu",
+                        "imgfile" : "jpg",
+                        "recipeNm" : "표고버섯 탕수",
+                        "foodNm" : "표고버섯 탕수",
+                        "userNm" : "튀긴건다맛있어",
+                        "heart" : "168",
+                        "tags" : [
+                            {
+                                "text" : "NEW", 
+                                "color": "#5EAB42"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "map" : {
         "dir" : "./img/map/",

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Title, Leadcopy, DefalutButton } from '../Common/style';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -20,8 +19,8 @@ function Review({ bgStyle, componentBlank }) {
                     // slidesPerView={'auto'}
                     spaceBetween={24}   
                     centeredSlides={true}             
-                    // autoplay={{ delay: 3000, disableOnInteraction: false }}     
-                    // modules={[Autoplay]}              
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}     
+                    modules={[Autoplay]}              
                     speed={700}
                     breakpoints={{
                         1800: {

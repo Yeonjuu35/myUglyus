@@ -4,16 +4,20 @@ import Review from "./Review/Review"
 import Banner from "./Banner/Banner"
 import MarketType1 from "./Market/MarketType1"
 import MarketType2 from "./Market/MarketType2"
+import Recipe from "./Recipe/Recipe"
+import Map from "./Map/Map"
+import Subscribe from "./Subscribe/Subscribe"
+import Form from "./Form/Form"
 
 import "../scss/banner.scss"
 
 function MainContent() {
     return (
         <>
-            <MainSwiper bgStyle={''} componentBlank={'componentBlankL'} />
-            <VegeSwiper bgStyle={''} componentBlank={'componentBlankL'} />
-            <Review bgStyle={''} componentBlank={'componentBlankL'} />
-            <Banner bgStyle={''} componentBlank={'componentBlankL'}
+            <MainSwiper bgStyle={''} componentBlank={'componentBlankDownL'} />
+            <VegeSwiper bgStyle={''} componentBlank={'componentBlankDownL'} />
+            <Review bgStyle={''} componentBlank={'componentBlankDownL'} />
+            <Banner bgStyle={''} componentBlank={'componentBlankDownL'}
                 backgroundColor = "#FE663F"
                 bannerStyle = "container customBanner1"
                 contentBoxCustom = "container customWidthBanner"
@@ -32,7 +36,7 @@ function MainContent() {
                 linkHref="#"
             />
             <MarketType1 bgStyle={''} componentBlank={''} />
-            <Banner bgStyle={'colorBg'} componentBlank={''}
+            <Banner bgStyle={'colorBg'} componentBlank={'componentBlankUD'}
                 backgroundColor = "#F380AF"
                 bannerStyle = "container customBanner2"
                 contentBoxCustom = "container customWidthBanner"
@@ -50,7 +54,11 @@ function MainContent() {
                 bannerImgStyle = "bannerImg"
                 linkHref="#"
             />
-            <MarketType2 bgStyle={''} componentBlank={'componentBlankL'} />
+            <MarketType2 bgStyle={''} componentBlank={''} />
+            <Recipe bgStyle={''} componentBlank={'componentBlankUpL componentBlankDownL'} />
+            <Map bgStyle={''} componentBlank={'componentBlankDownL'} />
+            <Subscribe bgStyle={'colorBg2'} componentBlank={''} />
+            <Form bgStyle={'colorBg'} componentBlank={''} />
         </>
     )
 }

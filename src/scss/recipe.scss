@@ -1,0 +1,72 @@
+// 컬러
+$Uglybg : #FFF4E0;
+$Uglyred : #FF2F2F;
+$Uglyorange : #FE663F;
+$Uglygreen : #5EAB42;
+$Uglybrawn : #CD8F50;
+$Uglypupple : #B552E4;
+$Uglydarkgray : #333333;
+$Uglygray : #9D9D9D;
+$Uglylightgray : #CECECE;
+$Uglyline : #E8E8E8;
+
+.recipeStyle {
+    max-width: 335px;
+    border-radius: 20px 20px 0 0;
+    @media (max-width : 1400px) {
+        max-width: 200px;
+    }
+    @media (max-width : 990px) {
+        max-width: 140px;
+        border-radius: 10px 10px 0 0;
+    }
+}
+.textboxStyle {
+    max-width: 335px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 16px 24px;
+    @media (max-width : 1400px) {
+        max-width: 200px;
+        padding: 12px 20px;
+    }
+    @media (max-width : 990px) {
+        max-width: 140px;
+        border-radius: 0 0 10px 10px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width : 990px) {
+    .imgStyle {
+        max-width: 8px;
+    }
+    .recipeBg {
+        background-color: $Uglybg;
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-item {
+        max-width: 300px;
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+    }
+    .recipeUpPadding {
+        padding-bottom: 10px;
+    }
+    .recipelayoutLeft {
+        justify-content: end;
+        padding-right: 5px;
+    }
+    .recipelayoutRight {
+        padding-left: 5px;
+    }
+}
+
+@media (min-width : 600px) {
+    .recipePadding {
+        padding-right: 10px;
+    }
+}

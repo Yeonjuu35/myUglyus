@@ -37,18 +37,18 @@ function MainContent() {
             />
             <MarketType1 bgStyle={''} componentBlank={''} />
             <Banner bgStyle={'colorBg'} componentBlank={'componentBlankUD'}
-                backgroundColor = "#F380AF"
+                backgroundColor = "#FFBBD7"
                 bannerStyle = "container customBanner2"
                 contentBoxCustom = "container customWidthBanner"
                 bannerTitle="돌아왔구마! 유기농 고구마 3kg" 
-                titleColor="#ffffff"
+                titleColor="#333333"
                 bannerSubTitle={
                     <>
                         <span className="d-none d-sm-inline">다시 돌아온 유기농 고구마, </span>
                         얼리버드 주문시 최대 25% 할인!
                     </>
                 }
-                subTitleColor="#ffffff"
+                subTitleColor="#333333"
                 bannerImgSrc="/img/eventbanner/sweetpotato.jpg" 
                 bannerImgAlt="유기농 고구마 3kg" 
                 bannerImgStyle = "bannerImg"

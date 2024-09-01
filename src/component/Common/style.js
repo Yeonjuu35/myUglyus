@@ -175,7 +175,7 @@ export const TagType3 = styled.p`
     color : #ffffff;
     font-weight: 600;
     border-radius : 15px 0 15px 0;
-    padding : 0.2em 0.8em;
+    padding : 0.4em 0.8em;
     @media (max-width : 990px) {
         font-size: 8px;
         border-radius : 10px 0 10px 0;

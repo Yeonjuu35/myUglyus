@@ -13,7 +13,7 @@ function VegeSwiper({componentBlank, bgStyle}) {
         { vegeSrc : '/img/vegeSwiper/paprika.png', vegeAlt : '파프리카', vegeNm : 'paprika', vegeBg : 'paprikaBg'}
     ];
     return (
-        <section className={`${componentBlank} ${bgStyle}`}>
+        <section className={`${componentBlank} ${bgStyle} position-relative`}>
             <Title className='text-center pb-lg-5 d-none d-lg-block'>개성 있는 외모, 싱싱하고 맛있는</Title>
             <div className='d-flex flex-column align-items-center'>
                 <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center py-lg-5 py-3 container customWidthM customHeight overflow-hidden'>

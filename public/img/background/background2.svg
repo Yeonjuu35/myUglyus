@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 262.95">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 263">
   <defs>
     <style>
       .cls-1 {
-        fill: #fdf2df;
+        fill: #fff4e0;
       }
     </style>
   </defs>
-  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
   <g>
     <g id="Layer_1">
-      <path class="cls-1" d="M0,0c167.79,15.91,363.4,65.97,530.07,120.1,160.9,44.48,351.48,76.66,521.99,61.99,105.43-7.28,240.82-35.05,337.87-61.99,49.66-14.27,96.72-30.91,151.94-46.05C1663.6,40.34,1801.91,11.71,1920,0v262.95S0,262.95,0,262.95V0Z"/>
+      <g id="Layer_1-2" data-name="Layer_1">
+        <path class="cls-1" d="M0,0c167.8,15.9,363.4,66,530.1,120.1,160.9,44.5,351.5,76.7,522,62,105.4-7.3,240.8-35.1,337.9-62,49.7-14.3,96.7-30.9,151.9-46.1C1663.6,40.3,1801.9,11.7,1920,0v263H0V0Z"/>
+      </g>
     </g>
   </g>
 </svg>

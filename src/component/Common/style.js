@@ -47,11 +47,11 @@ export const BigButton = styled.a.withConfig({
 
 // 레시피 탭 버튼
 export const RecipeButton = styled.button`
-    color: ${({ active }) => (active ? '#FE663F' : '#CECECE')}; /* active 상태에서 글자색 변경 */
+    color: ${({ active }) => (active ? '#FE663F' : '#CECECE')};
     font-size: 10px;
     font-weight: 600;
     background: transparent;
-    display: inline-block; /* 버튼 요소의 기본 레이아웃을 유지하기 위해 inline-block으로 설정 */
+    display: inline-block;
     cursor: pointer; 
     border : none;
     @media (min-width: 991px) {

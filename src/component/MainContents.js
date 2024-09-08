@@ -14,9 +14,9 @@ import "../scss/banner.scss"
 function MainContent() {
     return (
         <>
-            <MainSwiper bgStyle={''} componentBlank={'componentBlankDownL'} />
-            <VegeSwiper bgStyle={''} componentBlank={'componentBlankDownL'} />
-            <Review bgStyle={''} componentBlank={'componentBlankDownL'} />
+            <MainSwiper bgStyle={'bgType1L mainCustom'} componentBlank={''} />
+            <VegeSwiper bgStyle={'bgType2Top vegeCustomTop bgType2Bottom vegeCustomBottom'} componentBlank={'componentBlankUpL componentBlankDownL'} />
+            <Review bgStyle={'bgType3R reviweCustom'} componentBlank={'componentBlankDownL'} />
             <Banner bgStyle={''} componentBlank={'componentBlankDownL'}
                 backgroundColor = "#FE663F"
                 bannerStyle = "container customBanner1"
@@ -35,7 +35,7 @@ function MainContent() {
                 bannerImgStyle = "bannerImg"
                 linkHref="#"
             />
-            <MarketType1 bgStyle={''} componentBlank={''} />
+            <MarketType1 bgStyle={'colorBg bgType1L market1Custom'} componentBlank={''} />
             <Banner bgStyle={'colorBg'} componentBlank={'componentBlankUD'}
                 backgroundColor = "#FFBBD7"
                 bannerStyle = "container customBanner2"
@@ -54,10 +54,10 @@ function MainContent() {
                 bannerImgStyle = "bannerImg"
                 linkHref="#"
             />
-            <MarketType2 bgStyle={''} componentBlank={''} />
-            <Recipe bgStyle={''} componentBlank={'componentBlankUpL componentBlankDownL'} />
-            <Map bgStyle={''} componentBlank={'componentBlankDownL'} />
-            <Subscribe bgStyle={'colorBg2'} componentBlank={''} />
+            <MarketType2 bgStyle={'colorBg bgType1R market2Custom'} componentBlank={''} />
+            <Recipe bgStyle={'bgType4 recipeCustom'} componentBlank={'componentBlankUpL componentBlankDownL'} />
+            <Map bgStyle={'bgType3L mapCustom'} componentBlank={'componentBlankDownL'} />
+            <Subscribe bgStyle={'colorBg2 bgType1L subsup bgType1R subsdown'} componentBlank={''} />
             <Form bgStyle={'colorBg'} componentBlank={''} />
         </>
     )

@@ -7,7 +7,7 @@ import usdata from '../../data/data.json'
 function MarketType1({bgStyle, componentBlank}) {
     const { marketType1info, dir } = usdata.marketType1;
     return (
-        <section className={`colorBg py-5 ${bgStyle} ${componentBlank}`}>
+        <section className={`py-5 ${bgStyle} ${componentBlank} position-relative`}>
             <div className='py-5'>
                 <div className='d-flex flex-column align-items-center pb-lg-5 pb-3'>
                     <Title className='pb-lg-3 pb-2' fontcolor="#333333">지금 이 순간이 가장 맛있는 날!</Title>

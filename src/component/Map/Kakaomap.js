@@ -11,8 +11,7 @@ function Kakaomap({ setTargetNum }) {
             level: 12
         };
 
-       const map = new kakao.maps.Map(container, options);
-        //${usdata.map.dir}
+        const map = new kakao.maps.Map(container, options);
         const imageSrc = `./img/map/mapmarker.svg`,
               imageSize = new kakao.maps.Size(43, 48),
               imageOption = { offset: new kakao.maps.Point(21.5, 24) };

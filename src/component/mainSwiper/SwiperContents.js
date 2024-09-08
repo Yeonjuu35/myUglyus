@@ -4,7 +4,7 @@ function SwiperContent({ info, dir }) {
     const imageSrc = `${dir}/${info["swiperimgnm"]}.${info["swiperimgfile"]}`;
     const titleArray = info["swipertitle"].split('|');
     const leadcopyArray = info["swiperleadcopy"].split('|');
-    const fontColor = info["fontcolor"];  // 올바르게 참조
+    const fontColor = info["fontcolor"];
 
     return (
         <div style={{ backgroundColor: info["bgcolor"] }} className='d-flex align-items-center swiperImg'>

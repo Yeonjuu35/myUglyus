@@ -11,22 +11,24 @@ $Uglylightgray : #CECECE;
 $Uglyline : #E8E8E8;
 
 .customPadding {
-    padding: 200px 0;
+    padding: 180px 0;
 }
-
-
+.customZindex {
+    z-index: 10;
+}
 .vegeSubsBgL{
     &:before {
         position: absolute;
         content: "";
         display: block;
-        width:100vw;
+        width:100%;
         height: 15.63vw;
         background:url(../../public/img/vegeSubs/vegeSubsBgL_top.svg);
         background-repeat: no-repeat;
         background-position: center top 0;
         background-size: contain;
         z-index: 1;
+        top:0;
         @media (max-width : 990px) {
             display: none;
         }
@@ -35,13 +37,14 @@ $Uglyline : #E8E8E8;
         position: absolute;
         content: "";
         display: block;
-        width:100vw;
+        width:100%;
         height: 15.63vw;
         background:url(../../public/img/vegeSubs/vegeSubsBgL_bottom.svg);
         background-repeat: no-repeat;
-        background-position: center top 50;
+        background-position: center top;
         background-size: contain;
         z-index: 1;
+        bottom:0;
         @media (max-width : 990px) {
             display: none;
         }
@@ -54,25 +57,29 @@ $Uglyline : #E8E8E8;
             position: absolute;
             content: "";
             display: block;
-            width:100vw;
-            height: 10.10vw;
+            width:100%;
+            height: 18.10vw;
             background:url(../../public/img/vegeSubs/vegeSubsBg_S.svg);
             background-repeat: no-repeat;
             background-position: center top 0;
             background-size: contain;
             z-index: 1;
+            top: -10px;
+            transform: scaleY(-1) translateY(40%);
         }
         &:after {
             position: absolute;
             content: "";
             display: block;
-            width:100vw;
-            height: 10.10vw;
+            width:100%;
+            height: 18.10vw;
             background:url(../../public/img/vegeSubs/vegeSubsBg_S.svg);
             background-repeat: no-repeat;
             background-position: center top 50;
             background-size: contain;
             z-index: 1;
+            bottom: -10px;
+            transform: scaleX(-1) translateY(40%);
         }
     }
 }

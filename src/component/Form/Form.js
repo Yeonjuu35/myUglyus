@@ -7,7 +7,7 @@ function Form({ bgStyle, componentBlank }) {
     return (
         <section className={`${bgStyle} ${componentBlank} py-5`}>
             <div className="container customWidthS py-5">
-                <div className="row justify-content-center align-items-center py-5">
+                <div className="d-lg-flex justify-content-center align-items-center py-5">
                     <div className="col-lg-5 me-lg-auto">
                         <div className="mb-lg-0 mb-4 text-center">
                             <Title className="pb-lg-3 pb-2" fontcolor="#333333">구출이 필요한 농산물이 있나요?</Title>

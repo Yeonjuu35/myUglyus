@@ -7,7 +7,7 @@ import '../../scss/market.scss';
 function MarketType2({ bgStyle, componentBlank }) {
     const { dir, marketType2info } = usdata.marketType2;
     return (
-        <section className={`colorBg py-5 ${bgStyle} ${componentBlank}`}>
+        <section className={`py-5 ${bgStyle} ${componentBlank} position-relative`}>
             <div className='d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center container customWidthS py-5 px-5'>
                 <div className='d-flex flex-column pb-4 pb-lg-0 ps-xxl-5 ps-0'>
                     <Title className='text-center order-2 pt-lg-2 pt-1 pb-lg-3 pb-2' fontcolor="#333333">

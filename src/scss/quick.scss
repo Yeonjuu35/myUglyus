@@ -23,7 +23,7 @@ $Uglyline : #E8E8E8;
         bottom: calc(10vh - 55px);
         right: 35px;
         width: 70px;
-        z-index: 1;
+        z-index: 10000;
     &.showmenu{
             .radishQuick{
                 ul{

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import usdata from '../../data/data.json';
-import SwiperContent from './SwiperContent';
+import SwiperContents from './SwiperContents';
 import '../../scss/mainSwiper.scss';
 
 function MainSwiper({componentBlank, bgStyle}) {
@@ -9,7 +9,7 @@ function MainSwiper({componentBlank, bgStyle}) {
 
   return (
     <>
-      <Swiper className={`mySwiper ${bgStyle} ${componentBlank}`}
+      <Swiper className={`mySwiper ${bgStyle} ${componentBlank} position-relative`}
         loop={true}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         modules={[Autoplay]}
@@ -17,7 +17,7 @@ function MainSwiper({componentBlank, bgStyle}) {
       >
         {mainSwiperInfo.map((v, i) => (
           <SwiperSlide key={i}>
-            <SwiperContent info={v} dir={dir} />
+            <SwiperContents info={v} dir={dir} />
           </SwiperSlide>
         ))}
       </Swiper>

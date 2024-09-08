@@ -4,8 +4,8 @@ import '../../scss/footer.scss';
 
 function Footer({bgStyle}) {
     return (
-        <footer className={`customFluid py-5 ${bgStyle}`}>
-            <div className='d-flex flex-column flex-lg-row justify-content-between container customWidthS'>
+        <footer className={`customFluid ${bgStyle} position-relative`}>
+            <div className='d-flex flex-column flex-lg-row justify-content-between container customWidthS py-5'>
                 <div className='d-flex flex-column px-3 px-lg-0'>
                     <h1 className='order-lg-3 order-0 mb-3 mb-lg-0'>
                         <img className='logoWidth' src='./img/header/logo.svg' alt="어글리어스 로고" />

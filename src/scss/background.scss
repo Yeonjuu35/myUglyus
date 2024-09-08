@@ -1,0 +1,160 @@
+// 컴포넌트별 백그라운드
+.bgType1L:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 10.64vw;
+    background:url(../../public/img/background/background1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType1R:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 10.64vw;
+    background:url(../../public/img/background/background1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType2Top:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 13.67vw;
+    background:url(../../public/img/background/background2.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType2Bottom:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 13.67vw;
+    background:url(../../public/img/background/background2.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType3L:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 31.25vw;
+    background:url(../../public/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType3R:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 31.25vw;
+    background:url(../../public/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+.bgType4:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width:100%;
+    height: 24.52vw;
+    background:url(../../public/img/background/background4.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+    @media (max-width : 990px) {
+        display: none;
+    }
+}
+
+// 커스텀
+.bgType1L.mainCustom:before{
+    bottom: 0;
+    z-index: 10;
+}
+.bgType2Top.vegeCustomTop:before{
+    top: -1vw;
+    transform: scaleY(-1);
+}
+.bgType2Bottom.vegeCustomBottom:after{
+    bottom: -1vw;
+}
+.bgType3R.reviweCustom:after{
+    transform: scale(-1);
+    top: 0;
+}
+.bgType1L.market1Custom:before {
+    top: -10.5vw;
+}
+.bgType1R.market2Custom:after {
+    transform: scaleY(-1);
+    bottom: -10vw;
+}
+.bgType4.recipeCustom:before {
+    bottom: 1.3vw;
+    @media (max-width : 1530px) {
+        bottom: 3.1vw;
+    }
+}
+.bgType3L.mapCustom:before {
+    bottom: -0.5vw;
+}
+.bgType1L.subsup:before{
+    z-index: 10;
+    transform: scaleY(-1);
+    top: -0.26vw;
+}
+.bgType1R.subsdown:after{
+    z-index: 10;
+    bottom: -0.26vw;
+    transform: scaleX(-1);
+}
+.bgType1L.footercustom:before {
+    transform: scale(-1);
+    top: -0.26vw;
+}

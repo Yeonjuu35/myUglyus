@@ -8,12 +8,12 @@ function Map({ bgStyle, componentBlank }) {
     const [targetnum, setTargetNum] = useState(0);
 
     return (
-        <section className={`${bgStyle} ${componentBlank} py-5`}>
+        <section className={`${bgStyle} ${componentBlank} py-5 position-relative`}>
             <div className='pb-lg-5 pb-3'>
                 <Title className='pb-lg-3 pb-2 text-center'>우리 집에 온 채소·과일은 어디서 왔을까?</Title>
                 <Leadcopy className='text-center'>여러분이 구해준 채소 한 알, 어디서 왔을까요?</Leadcopy>
             </div>
-            <div className='mx-3 pb-5'>
+            <div>
                 <div className='d-flex flex-wrap justify-content-between container'>
                     <div className='col-lg-9 col-12 position-relative mapheight'>
                         <Kakaomap setTargetNum={setTargetNum} />

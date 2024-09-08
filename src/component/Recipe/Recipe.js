@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { Title, Leadcopy, RecipeButton } from '../Common/style';
-import RecipeContent from './RecipeContent';
+import RecipeContent from './RecipeContents';
 import '../../scss/recipe.scss';
 import usdata from '../../data/data.json';
 
 function Recipe({ bgStyle, componentBlank }) {
     const { recipeinfo, dir } = usdata.recipe;
-    const [selectedBtn, setSelectedBtn] = useState(recipeinfo[0].btnNm); // 첫 번째 버튼을 초기 선택 상태로 설정
+    const [selectedBtn, setSelectedBtn] = useState(recipeinfo[0].btnNm);
 
     const handleButtonClick = (btnNm) => {
-        setSelectedBtn(btnNm); // 선택된 버튼을 상태로 설정
+        setSelectedBtn(btnNm);
     };
 
     return (
-        <section className={`${bgStyle} ${componentBlank} py-5`}>
+        <section className={`${bgStyle} ${componentBlank} py-5 position-relative`}>
             <div className='pb-lg-5 pb-3'>
                 <Title className='pb-lg-3 pb-2 text-center'>나를 위한 맞춤 레시피</Title>
                 <Leadcopy className='text-center'>채소 박스로 만든 화제의 레시피, 같이 나눠요!</Leadcopy>

@@ -24,22 +24,22 @@ function Footer({bgStyle}) {
                         </div>
                     </div>
                     <div className='d-flex mb-lg-5 mb-0 pb-4 pb-lg-0 align-items-center'>
-                        <DefalutButton large={false} className='me-3'>문의하기</DefalutButton>
-                        <DefalutButton large={false}>자주묻는질문</DefalutButton>
+                        <DefalutButton large={false} className='me-3' href='/contact_us'>문의하기</DefalutButton>
+                        <DefalutButton large={false} href='/qna'>자주묻는질문</DefalutButton>
                     </div>
                 </div>
                 <div className='d-flex flex-column justify-content-between footerLine px-3 px-lg-0 pb-5'>
                     <div className='d-flex justify-content-lg-end py-4 py-lg-0'>
-                        <SnsIcon href="#" className='footerIcon d-flex justify-content-center align-items-center me-2'>
+                        <SnsIcon href="/facebook" className='footerIcon d-flex justify-content-center align-items-center me-2'>
                             <img src="./img/footer/facebook.svg" alt="페이스북" />
                         </SnsIcon>
-                        <SnsIcon href="#" className='footerIcon d-flex justify-content-center align-items-center me-2'>
+                        <SnsIcon href="/instagram" className='footerIcon d-flex justify-content-center align-items-center me-2'>
                             <img src="./img/footer/instagram.svg" alt="인스타그램" />
                         </SnsIcon>
-                        <SnsIcon href="#" className='footerIcon d-flex justify-content-center align-items-center me-2'>
+                        <SnsIcon href="/youtube" className='footerIcon d-flex justify-content-center align-items-center me-2'>
                             <img src="./img/footer/youtube.svg" alt="유튜브" />
                         </SnsIcon>
-                        <SnsIcon href="#" className='footerIcon d-flex justify-content-center align-items-center'>
+                        <SnsIcon href="/twitter" className='footerIcon d-flex justify-content-center align-items-center'>
                             <img src="./img/footer/twitter.svg" alt="트위터" />
                         </SnsIcon>
                     </div>

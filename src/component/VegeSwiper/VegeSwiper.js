@@ -36,7 +36,7 @@ function VegeSwiper({componentBlank, bgStyle}) {
                     </Swiper>
                     <p className='fontVegeSwiper text-nowrap mb-3 mb-lg-0 whitebgR position-relative d-flex align-items-center justify-content-center'>Ugly Us</p>
                 </div>
-                <DefalutButton large={true}>채소박스 구경하기</DefalutButton>
+                <DefalutButton large={true} href='https://uglyus.co.kr/manual'>채소박스 구경하기</DefalutButton>
             </div>
         </section>
     )

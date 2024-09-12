@@ -26,12 +26,12 @@ function Interview({ targetnum }) {
                 <p className="fontMapSubtitle pb-0 pb-lg-4">{altText}님의 이야기</p>
                 <p className='pb-0 pb-lg-4 fontText'>
                     <span className="d-none d-lg-inline">{interviewtext}</span>
-                    <a href={marketlink}>
+                    <a href={`/market/${marketlink}`}>
                         <span className="fontText mt-auto d-flex d-lg-none justify-content-end">+ 더보기</span>
                     </a>
                 </p>
                 <div className="d-none d-lg-flex justify-content-start align-items-center">
-                    <DefalutButton>구매하러가기</DefalutButton>
+                    <DefalutButton href={`/market/${marketlink}`}>구매하러가기</DefalutButton>
                 </div>
                 {/* <div className="d-flex d-lg-none my-3 justify-content-center align-items-center w-100">
                     <button type="button" className="font_button mapbuttonstyle_pyj"><a href="#">구매하러가기</a></button>

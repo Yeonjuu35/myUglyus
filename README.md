@@ -9,13 +9,13 @@
 
 😉 제작자 : 박연주
 
-📫 e-mail : ###
+📫 e-mail : yeonjuu35@gmail.com
 
-🗒 notion : ###
+🗒 notion : https://www.notion.so/Ugly-us-React-fd6d570a224246279105109c605bf3e2
 
 🎨 figma : ###
 
-🐈 git : ###
+🐈 git : https://github.com/Yeonjuu35
 
 🔧 사용툴
 - illustrator
@@ -24,8 +24,7 @@
 
 # Dataflow
 
-# 리액트 프로젝트 개발환경
-# nodejs v18.20.3
+# 리액트 프로젝트 개발환경 : node.js v18.20.3
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -44,6 +43,7 @@
     "web-vitals": "^2.1.4"
 
 # UXUI
+
 
 # 디지털소스관리
     ...

@@ -10,7 +10,7 @@ function Subscribe({ bgStyle, componentBlank }) {
                     <span className='d-block'>어글리어스 채소박스</span>
                 </Title>
                 <Leadcopy fontcolor="#ffffff" className='pb-3 pb-lg-5'>자세한 이용 방법이 궁금하다면?</Leadcopy>
-                <BigButton btncolor="#ffffff" fontcolor="#5EAB42">야채박스 구경하기</BigButton>
+                <BigButton btncolor="#ffffff" fontcolor="#5EAB42" href='https://uglyus.co.kr/manual' className='customZindex'>야채박스 구경하기</BigButton>
             </div>
         </section>
     )

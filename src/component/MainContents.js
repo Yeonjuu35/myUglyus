@@ -33,7 +33,7 @@ function MainContent() {
                 bannerImgSrc="/img/eventbanner/vegetest.png" 
                 bannerImgAlt="집밥 유형 진단" 
                 bannerImgStyle = "bannerImg"
-                linkHref="#"
+                linkHref="/babtest"
             />
             <MarketType1 bgStyle={'colorBg bgType1L market1Custom'} componentBlank={''} />
             <Banner bgStyle={'colorBg'} componentBlank={'componentBlankUD'}
@@ -52,7 +52,7 @@ function MainContent() {
                 bannerImgSrc="/img/eventbanner/sweetpotato.jpg" 
                 bannerImgAlt="유기농 고구마 3kg" 
                 bannerImgStyle = "bannerImg"
-                linkHref="#"
+                linkHref="/market/sweetpotato"
             />
             <MarketType2 bgStyle={'colorBg bgType1R market2Custom'} componentBlank={''} />
             <Recipe bgStyle={'bgType4 recipeCustom'} componentBlank={'componentBlankUpL componentBlankDownL'} />

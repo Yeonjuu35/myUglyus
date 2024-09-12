@@ -5,7 +5,7 @@ function Banner({ bgStyle, componentBlank, bannerTitle, bannerSubTitle, bannerIm
         <section className={`${bgStyle} ${componentBlank}`}>
             <div className={`${bannerStyle}`} style={{ backgroundColor: backgroundColor || 'transparent' }}>
                 <a href={linkHref}>
-                    <span className={`d-flex justify-content-between align-items-center container ${contentBoxCustom}`}>
+                    <span className={`d-flex justify-content-between align-items-center ${contentBoxCustom}`}>
                         <div>
                             <BannerTitle className='pb-lg-2 pb-1' fontcolor={titleColor}>{bannerTitle}</BannerTitle>
                             <BannerSubTitle fontcolor={subTitleColor}>{bannerSubTitle}</BannerSubTitle>

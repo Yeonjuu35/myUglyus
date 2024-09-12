@@ -83,7 +83,7 @@ function Review({ bgStyle, componentBlank }) {
                         ))
                     }
                 </Swiper>
-                <DefalutButton large={true}>이용후기 보러가기</DefalutButton>
+                <DefalutButton large={true} href='/review'>이용후기 보러가기</DefalutButton>
             </div>
         </section>
     );

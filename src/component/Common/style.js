@@ -47,7 +47,7 @@ export const BigButton = styled.a.withConfig({
 
 // 레시피 탭 버튼
 export const RecipeButton = styled.button`
-    color: ${({ active }) => (active ? '#FE663F' : '#CECECE')};
+    color: ${({ $active }) => ($active ? '#FE663F' : '#CECECE')};
     font-size: 10px;
     font-weight: 600;
     background: transparent;
@@ -57,15 +57,15 @@ export const RecipeButton = styled.button`
     @media (min-width: 991px) {
         border-radius: 20px;
         font-size: 15px;
-        background: ${({ active }) => (active ? '#FE663F' : 'transparent')};
-        color: ${({ active }) => (active ? '#fff' : '#CECECE')};
+        background: ${({ $active }) => ($active ? '#FE663F' : 'transparent')};
+        color: ${({ $active }) => ($active ? '#fff' : '#CECECE')};
         width: auto;
         line-height: 2.55;
         padding: 0 2em;
-        border: ${({ active }) => (active ? 'none' : '1px solid #CECECE')};
+        border: ${({ $active }) => ($active ? 'none' : '1px solid #CECECE')};
         border-radius: 20px;
     }
-`;
+`
 
 // sns 아이콘 버튼
 export const SnsIcon = styled.a`
@@ -157,7 +157,7 @@ export const TagType1 = styled.p`
 `
 export const TagType2 = styled.p`
     display : inline-block;
-    background: ${(props) => props.tag1Color || '#FE663F'};
+    background: ${(props) => props.tag2Color || '#FE663F'};
     font-size: 1.3em;
     color : #FFFFFF;
     font-weight: 600;
@@ -170,7 +170,7 @@ export const TagType2 = styled.p`
 `
 export const TagType3 = styled.p`
     display : inline-block;
-    background: ${(props) => props.tag2Color || '#FE663F'};
+    background: ${(props) => props.$tag3Color || '#FE663F'};
     font-size: 15px;
     color : #ffffff;
     font-weight: 600;

@@ -5,7 +5,7 @@ function RecipeContent({ recipeblank, recipeHref, recipeImg, foodNm, recipeNm, u
         <a href={recipeHref} className={recipeblank}>
             <span>
                 <div className='position-relative'>
-                    <TagType3 className='position-absolute top-0 left-0' tag2Color={tagData.color}>{tagData.text}</TagType3>
+                    <TagType3 className='position-absolute top-0 left-0' $tag3Color={tagData.color}>{tagData.text}</TagType3>
                     <img src={recipeImg} alt={foodNm} className='recipeStyle' />
                 </div>
                 <div className='textboxStyle px-xxl-4 py-xxl-3 px-3 py-2'>

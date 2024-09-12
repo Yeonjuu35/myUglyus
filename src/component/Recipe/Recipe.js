@@ -25,7 +25,7 @@ function Recipe({ bgStyle, componentBlank }) {
                         <RecipeButton 
                             key={`recipe${index}`}
                             onClick={() => handleButtonClick(item.btnNm)}
-                            active={item.btnNm === selectedBtn}
+                            $active={item.btnNm === selectedBtn}
                             className={buttonClass}
                         >
                             {item.btnNm}
@@ -41,7 +41,7 @@ function Recipe({ bgStyle, componentBlank }) {
                                     ${i < 2 ? "recipeUpPadding" : ""} 
                                     ${i % 2 === 0 ? "recipelayoutLeft" : "recipelayoutRight"}`}>
                         <RecipeContent
-                            recipeHref={`/${recipe.imgNm}`}
+                            recipeHref={`/recipe/${recipe.recipehref}`}
                             recipeImg={`${dir}${recipe.imgNm}.${recipe.imgfile}`}
                             foodNm={recipe.foodNm}
                             recipeNm={recipe.recipeNm}

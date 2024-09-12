@@ -7,7 +7,7 @@ const Forminput = ({label, labelnm, placeholder, register, required, pattern, la
                {...register(label, { required, pattern })} 
                className={inputcls}
         />
-        {errors[label] && <span className="formfont_placehold_pyj text-danger errorps">{errors[label].message}</span>}
+        {errors[label] && <span className="formfontPlacehold text-danger errorps">{errors[label].message}</span>}
     </>
 )
 

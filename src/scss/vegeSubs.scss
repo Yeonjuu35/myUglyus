@@ -65,7 +65,7 @@ $Uglyline : #E8E8E8;
             background-size: contain;
             z-index: 1;
             top: -10px;
-            transform: scaleY(-1) translateY(40%);
+            transform: scaleY(-1) translateY(38%);
         }
         &:after {
             position: absolute;
@@ -79,7 +79,7 @@ $Uglyline : #E8E8E8;
             background-size: contain;
             z-index: 1;
             bottom: -10px;
-            transform: scaleX(-1) translateY(40%);
+            transform: scaleX(-1) translateY(38%);
         }
     }
 }

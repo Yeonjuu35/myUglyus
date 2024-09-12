@@ -22,7 +22,7 @@ function SwiperContent({ info, dir }) {
                             i === 0 ? v : <span key={i} className='d-block'>{v}</span>
                         ))}
                     </Leadcopy>
-                    <BigButton style={{ background: info["btncolor"] }}>{info["btntext"]}</BigButton>
+                    <BigButton style={{ background: info["btncolor"] }} href={info["btnlink"]}>{info["btntext"]}</BigButton>
                 </div>
                 <div className='col-lg-6 position-relative'>
                     {info["swipertag"] && (
